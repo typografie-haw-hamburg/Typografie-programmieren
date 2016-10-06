@@ -1,6 +1,6 @@
 #Übungen #3
 
-Macht bitte folgende Übungen bis zum nächsten Mittwoch. Wenn etwas nicht klappt, versucht euch untereinander zu helfen, zum Beispiel in der [Facebook-Gruppe «Script Design 2016 First Aid»](https://www.facebook.com/groups/1760227230910812/).
+Macht bitte folgende kleine Übungen bis zum nächsten Mittwoch. Wenn etwas nicht klappt, versucht euch untereinander zu helfen, zum Beispiel in der [Facebook-Gruppe «Script Design 2016 First Aid»](https://www.facebook.com/groups/1760227230910812/).
 
 1. Schreibt ein Script, das 20 Kreise auf der Seite nebeneinander platziert. Den Abstand zwischen den Kreisen könnt ihr euch selbst aussuchen.
 
