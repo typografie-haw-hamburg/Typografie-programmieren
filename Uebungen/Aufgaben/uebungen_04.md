@@ -2,7 +2,7 @@
 
 Macht bitte folgende Übungen bis zum nächsten Mittwoch. Wenn etwas nicht klappt, versucht euch untereinander zu helfen, zum Beispiel in der [Facebook-Gruppe «Script Design 2016 First Aid»](https://www.facebook.com/groups/1760227230910812/) (Bis jetzt ist da noch nicht viel Leben in der Gruppe. Nutzt die Möglichkeit euch dort helfen zu lassen und anderen zu helfen!).
 
-1. Schreibt ein Script, das Kreise zufällig auf einer Seite platziert (Déjà-vu, anyone?). Legt in eurem Script zwei Farben fest. Wenn die Kreise im rechten oberen Viertel der Seite landen, sollen die Kreise mit Farbe 1 gefüllt werden. Landen die Kreise im linken unteren Viertel, sollen sie mit Farbe 2 gefüllt werden. Alle anderen Kreise sollen schwarz gefüllt werden. Verwendet zum Überprüfen, ob zwei Eigenschaften gleichzeitig zutreffen den Operator *&&*.
+1. Schreibt ein Script, das Kreise zufällig auf einer Seite platziert (Déjà-vu, anyone?). Legt in eurem Script zwei Farben fest. Wenn die Kreise im rechten oberen Viertel der Seite landen, sollen die Kreise mit Farbe 1 gefüllt werden. Landen die Kreise im linken unteren Viertel, sollen sie mit Farbe 2 gefüllt werden. Alle anderen Kreise sollen schwarz gefüllt werden. Verwendet zum Überprüfen, ob zwei Eigenschaften gleichzeitig zutreffen den Operator **&&**.
 
   * Ändert das Script so ab, dass ihr fünf verschiedene Farben festlegt. Per Zufall sollen dann zwei dieser Farben ausgewählt werden. Tipp: Dazu könnt ihr die Farben in einen Array legen.
 
