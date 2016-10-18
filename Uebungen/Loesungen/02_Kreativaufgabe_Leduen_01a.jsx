@@ -1,4 +1,4 @@
-﻿//@includepath "~/Documents/;%USERPROFILE%Documents";
+//@includepath "~/Documents/;%USERPROFILE%Documents";
 //@include "basiljs/basil.js";
 
 function draw() {
