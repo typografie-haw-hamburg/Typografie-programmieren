@@ -10,10 +10,10 @@ Macht bitte folgende Übungen bis zum nächsten Mittwoch. Wenn etwas nicht klapp
 2. Erstellt drei `.txt`-Dateien mit verschiedenen Textinhalten. Schreibt ein Script, dass per zufälliger Auswahl einen dieser drei Texte in euer Dokument lädt. Dazu müsst ihr zunächst die Dateinamen der Textdateien als String in einen Array speichern. Bitte daran denken: Damit ihr Texte in euer Dokument laden könnt, muss das Dokument abgespeichert sein und die Texte müssen in einem Ordner namens `data` liegen, der neben eurem Dokument liegt.
 
 3. Erweitert das Script aus der vorherigen Aufgabe. Zeichnet einen schwarzen Punkt in der linken unteren Ecke eines jeden neuen Worts (siehe Bild). Schaut euch dazu noch einmal [das Script](https://github.com/typografie-haw-hamburg/Typografie-programmieren/blob/master/scripts/05_words_circleWords.jsx) aus dem Kurs an, bei dem wir Kreise um ein Wort gezeichnet haben.
+![Punkte am Wortanfang](../../images/textDots.png)
 
   * Ersetzt in eurem Script den Befehl `b.ellipse` durch `b.line` (behaltet einfach die gleichen Werte in den Klammern) und schaut euch an, wie sich das Ergebnis ändert.
 
-  ![Punkte am Wortanfang](../../images/textDots.png)
 
 4. (**Kreativaufgabe**) Versucht mit eurem Wissen über das bisher Gelernte eine interessante Gestaltung bzw. ein interessantes Muster per Script zu erstellen. In eurem Script soll Text bearbeitet/verändert werden. Speichert von diesem Design ein JPEG ab (Datei -> Exportieren -> Format JPEG -> Qualität Hoch | Auflösung(ppi): 72).
 
@@ -21,4 +21,4 @@ Macht bitte folgende Übungen bis zum nächsten Mittwoch. Wenn etwas nicht klapp
 
 5. (**optionale Zusatzaufgabe**) Schreibt ein Script, in dem ihr `b.map()` mit Text kombiniert. Ein Beispiel: Mit Hilfe von `b.map()` könnte man ein Script schreiben, dass dem ersten Buchstaben einer Textzeile eine vertikale Skalierung («verticalScale») von 50% zuweist, und dem letzten eine von 600% (siehe Bild). Findet eine eigene Variante, diese kann natürlich auch für die Kreativaufgabe verwendet werden.
 
-  ![Vertikale Skalierung von Buchstaben](../../images/textScale.png)
+![Vertikale Skalierung von Buchstaben](../../images/textScale.png)
