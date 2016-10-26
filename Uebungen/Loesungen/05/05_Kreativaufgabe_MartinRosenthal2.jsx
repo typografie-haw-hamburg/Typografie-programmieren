@@ -5,9 +5,13 @@ function draw() {
 
   b.clear( b.doc() );
 
+  
+  b.layer ("Back");
+  b.layer ("Mid");
+  b.layer ("Front");
 
   
-
+  
   
   var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
   var alphabetChoice = b.round(b.random (0, alphabet.length-1));
@@ -21,10 +25,12 @@ function draw() {
   var farbeRandom = b.floor(b.random(0, farbe.length));
   var color = farbe[farbeRandom];
 
+  b.layer("Back")
   b.fill(color);
   b.rect(0, 0, b.width, b.height);
   
-  b.fill(0)
+  b.layer("Front");
+  b.fill(0);
     // Typo
   b.textFont("National","Thin");
   b.textSize(15);
@@ -65,6 +71,7 @@ function draw() {
     };
   };
 
+  b.layer("Mid");
   //Buchstabenanzahl 1
   b.textSize(200);
   b.textTracking(0);
