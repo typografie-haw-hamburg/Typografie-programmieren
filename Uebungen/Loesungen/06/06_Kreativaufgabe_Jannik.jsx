@@ -1,4 +1,4 @@
-﻿//@includepath "~/Documents/;%USERPROFILE%Documents";
+//@includepath "~/Documents/;%USERPROFILE%Documents";
 //@include "basiljs/basil.js";
 
 function draw() {
@@ -8,7 +8,9 @@ b.clear (b.doc());
 b.rectMode (b.CENTER);
 b.fill (0);
 b.noStroke();
+b.margins (90);
 b.canvasMode (b.MARGIN);
+
 
 
 //var userWord = prompt ("Enter Word:", "System")
