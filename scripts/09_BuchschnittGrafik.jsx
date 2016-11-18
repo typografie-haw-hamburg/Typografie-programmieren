@@ -3,10 +3,13 @@
 
 function draw() {
 
+  // platziert eine Grafik im Buchschnitt des gedruckten Dokuments
+
+  // gewünschte Seitenzahl einstellen
+  var pageCount = 20;
+
   b.clear( b.doc() );
   b.page(1);
-
-  var pageCount = b.pageCount();
 
   var img = b.image("MonaLisa.jpg", 0, 0);
 
@@ -22,7 +25,7 @@ function draw() {
 
 
   for (var i = 1; i < pageCount; i++) {
-    b.page(i + 1);
+    b.addPage();
     img = b.image("MonaLisa.jpg", 0, 0);
     xPos = b.width - step * i;
     b.transformImage(img, xPos, yPos, imgWidth, imgHeight);
