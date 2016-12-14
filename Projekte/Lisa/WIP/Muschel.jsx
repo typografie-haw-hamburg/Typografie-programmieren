@@ -1,0 +1,1 @@
+//@includepath "~/Documents/;%USERPROFILE%Documents";//@include "basiljs/basil.js";function draw() {  b.clear( b.doc() );  b.noFill();     for (var i = 0; i < 50; i++) {        var posX = b.width/2        var posY = b.height/2      b.ellipse( posX, posY, b.width/5+i*9, b.height/3-i*9 );      }}b.go();
