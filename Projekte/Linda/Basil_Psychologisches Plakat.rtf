@@ -1,64 +1,48 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
-{\fonttbl\f0\fnil\fcharset0 PlainRegular-Regular;\f1\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww17180\viewh14440\viewkind0
-\deftab720
-\pard\pardeftab720\ri-1446\sl288\slmult1\partightenfactor0
+//
+Serielles psychologisches Plakat 
+Visualisierung von Stimmungen
 
-\f0\fs60 \cf0 Serielles psychologisches Plakat \
-\pard\pardeftab720\ri-1446\sl288\slmult1\partightenfactor0
+Innerhalb der Ausstellung soll der Besucher an einem Bildschirm einen Fragebogen 
+zu seiner emotionalen Verfassung beantworten. Die Daten, die dadurch gespeichert 
+werden, werden Parameter für die Gestaltung der „psychologischen Plakate“. 
+Das Resultat – die Visualisierung seiner Emotionen –wird für jede Person als ein 
+Plakat (Din A4?) ausgedruckt.
 
-\fs24 \cf0 Visualisierung von Stimmungen\
-\
-Innerhalb der Ausstellung soll der Besucher an einem Bildschirm einen Fragebogen zu seiner emotionalen Verfassung beantworten. Die Daten, die dadurch gespeichert werden, werden Parameter f\'fcr die Gestaltung der \'84psychologischen Plakate\'93. Das Resultat \'96 die Visualisierung seiner Emotionen \'96wird f\'fcr jede Person als ein Plakat (Din A4?) ausgedruckt.
-\fs36 \
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f1\b\fs24 \cf0 \
-\
-\
+
 1.Fragebogen erstellen: Processing
-\b0 \
-\
-Regler zwischen -2,-1, 0, 1, 2\
-\
-Daten einspeisen\
-(Wie kann man den Fragebogen verkn\'fcpfen?)\
-\
 
-\b 2. Konstante:
-\b0 \
-Typo, Datum und Uhrzeit, Ort\
-\
+        Regler zwischen -2,-1, 0, 1, 2
 
-\b 3. Variablen f\'fcr Farben anlegen\
+        Daten einspeisen
+        (Wie kann man den Fragebogen verknüpfen?)
 
-\b0 \
-\
-\
+2. Konstante:
+        Typo, Datum und Uhrzeit, Ort
+        
 
-\b 4. Emotionen auswerten\
-und je nach Emotion ein Muster auf die Seite zeichnen
-\b0 \
-\
-if (x > 0 && y > 0 ) \{\
-b.ellipse (x,y,20, 20);\}\
-\
-Befehl: farblich multiplizieren?\
+3. Variablen für Farben anlegen
 
-\b 5. Spruch\
 
-\b0 Variablen anlegen mit verschiedenen Spr\'fcchen zugeordnet zu den Emotionen\
-mehrere Spr\'fcche zu einer Emotion,\
-Zufall bestimmt welcher Spruch kommt
-\b \
-\
-array anlegen, b.random\
-b.typo,\
-Immer unten ausrichten?\
-\
-6. Dokument drucken\
-\
-\
-\
-}
+
+4. Emotionen auswerten
+        und je nach Emotion ein Muster auf die Seite zeichnen
+
+        if (x > 0 && y > 0 ) {
+        b.ellipse (x,y,20, 20);}
+
+        Befehl: farblich multiplizieren?
+        
+5. Spruch
+        Variablen anlegen mit verschiedenen Sprüchen zugeordnet zu den Emotionen
+        mehrere Sprüche zu einer Emotion,
+        Zufall bestimmt welcher Spruch kommt
+
+        array anlegen, b.random
+        b.typo,
+        Immer unten ausrichten?
+
+6. Dokument drucken
+
+
+
