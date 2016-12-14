@@ -1,0 +1,1 @@
+﻿Ich mache ein Buch zum Thema Ordnung und Chaos. Das Buch soll neben philosophischen / Sach-Texten Serien aus mit basil.js erstellten Grafiken / Mustern beinhalten, welche sich mit der Thematik Ordnung und Chaos auseinandersetzen.   
