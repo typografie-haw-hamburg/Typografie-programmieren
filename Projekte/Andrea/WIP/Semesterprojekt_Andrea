@@ -1,0 +1,101 @@
+//@includepath "~/Documents/;%USERPROFILE%Documents";
+//@include "basiljs/bundle/basil.js";
+//@include "basiljs/lib/polyfills.js"
+//@include "basiljs/lib/rita-full.js";
+
+
+function draw() {
+
+  b.clear(  b.doc()  );
+  b.units(b.MM);
+  var doc = b.doc();
+  doc.documentPreferences.properties = { facingPages: true, pageHeight: 420, pageWidth: 297 }
+  var pageWidth = 297;
+  var pageHeight = 420;
+  var hash = new HashList();
+
+  var fullertitel = "comprehensive propensities";
+  var fullertext = "I am enthusiastic over humanity’s extraordinary and sometimes very timely ingenuities. If you are in a shipwreck and all the boats are gone, a piano top buoyant enough to keep you afloat that comes along makes a fortuitous life preserver. But this is not to say that the best way to design a life preserver is in the form of a piano top. I think that we are clinging to a great many piano tops in accepting yesterday’s fortuitous contrivings as constituting the only means for solving a given problem. Our brains deal exclusively with special-case experiences. Only our minds are able to discover the generalized principles operating without exception in each and every special-experience case which if detected and mastered will give knowledgeable advantage in all instances. Because our spontaneous initiative has been frustrated, too often inadvertently, in earliest childhood we do not tend, customarily, to dare to think competently regarding our potentials. We find it socially easier to go on with our narrow, shortsighted specialization’s and leave it to others---primarily to the politicians---to find some way of resolving our common dilemmas. Countering that spontaneous grownup trend to narrowness I will do my, hopefully 'childish', best to confront as many of our problems as possible by employing the longest-distance thinking of which I am capable---though that may not take us very far into the future. Having been trained at the U. S. Naval Academy and practically experienced in the powerfully effective forecasting arts of celestial navigation, pilotage, ballistics, and logistics, and in the long-range, anticipatory, design science governing yesterday’s naval mastery of the world from which our present day’s general systems theory has been derived, I recall that in 1927 I set about deliberately exploring to see how far ahead we could make competent forecasts regarding the direction in which all humanity is trending and to see how effectively we could interpret the physical details of what comprehensive evolution might be portending as disclosed by the available data. I came to the conclusion that it is possible to make a fairly reasonable forecast of about twenty-five years. That seems to be about one industrial 'tooling' generation. On the average, all inventions seem to get melted up about every twenty-five years, after which the metals come back into recirculation in new and usually more effective uses. At any rate, in 1927 I evolved a forecast. Most of my 1927’s prognosticating went only to 1952---that is, for a quarter-century, but some of it went on for a half-century, to 1977. In 1927 when people had occasion to ask me about my prognostications and I told them what I thought it would be appropriate to do about what I could see ahead for the 1950’s, 1960’s, and 1970’s people used to say to me, 'Very amusing--you are a thousand years ahead of your time'. Having myself studied the increments in which we can think forwardly I was amazed at the ease with which the rest of society seemed to be able to see a thousand years ahead while I could see only one-fortieth of that time distance. As time went on people began to tell me that I was a hundred years ahead, and now they tell me that I’m a little behind the times. But I have learned about public reaction to the unfamiliar and also about the ease and speed with which the transformed reality becomes so 'natural' as misseemingly to have been always obvious. So I knew that their last observations were made only because the evolutionary events I had foreseen have occurred on schedule. However, all that experience gives me confidence in discussing the next quarter-century’s events. First, I’d like to explore a few thoughts about the vital data confronting us right now - such as the fact that more than half of humanity as yet exists in miserable poverty, prematurely doomed, unless we alter our comprehensive physical circumstances. It is certainly no solution to evict the poor, replacing their squalid housing with much more expensive buildings which the original tenants can’t afford to reoccupy. Our society adopts many such superficial palliatives. Because yesterday’s negatives are moved out of sight from their familiar locations many persons are willing to pretend to themselves that the problems have been solved. I feel that one of the reasons why we are struggling inadequately today is that we reckon our costs on too shortsighted a basis and are later overwhelmed with the unexpected costs brought about by our shortsightedness. Of course, our failures are a consequence of many factors, but possibly one of the most important is the fact that society operates on the theory that specialization is the key to success, not realizing that specialization precludes comprehensive thinking. This means that the potentially-integratable-techno-economic advantages accruing to society from the myriad specializations are not comprehended integratively and therefore are not realized, or they are realized only in negative ways, in new weaponry or the industrial support only of war faring. All universities have been progressively organized for ever finer specialization. Society assumes that specialization is natural, inevitable, and desirable. Yet in observing a little child, we find it is interested in everything and spontaneously apprehends, comprehends, and coordinates an ever expending inventory of experiences. Children are enthusiastic planetarium audiences. Nothing seems to be more prominent about human life than its wanting to understand all and put everything together. One of humanity’s prime drives is to understand and be understood. All other living creatures are designed for highly specialized tasks. Man seems unique as the comprehensive comprehender and coordinator of local universe affairs. If the total scheme of nature required man to be a specialist she would have made him so by having him born with one eye and a microscope attached to it. What nature needed man to be was adaptive in many if not any direction; wherefore she gave man a mind as well as a coordinating switchboard brain. Mind apprehends and comprehends the general principles governing flight and deep sea diving, and man puts on his wings or his lungs, then takes them off when not using them. The specialist bird is greatly impeded by its wings when trying to walk. The fish cannot come out of the sea and walk upon land, for birds and fish are specialists. Of course, we are beginning to learn a little in the behavioral sciences regarding how little we know about children and the educational processes. We had assumed the child to be an empty brain receptacle into which we could inject our methodically-gained wisdom until that child, too, became educated. In the light of modern behavioral science experiments that was not a good working assumption. Inasmuch as the new life always manifests comprehensive propensities I would like to know why it is that we have disregarded all children’s significantly spontaneous and comprehensive curiosity and in our formal education have deliberately instituted processes leading only to narrow specialization. We do not have to go very far back in history for the answer. We get back to great, powerful men of the sword, exploiting their prowess fortuitously and ambitiously, surrounded by the abysmal ignorance of world society. We find early society struggling under economic conditions wherein less than I per cent of humanity seemed able to live its full span of years. This forlorn economic prospect resulted from the seeming inadequacy of vital resources and from an illiterate society’s inability to cope successfully with the environment, while saddled also with preconditioned instincts which inadvertently produced many new human babies. Amongst the strugglers we had cunning leaders who said, 'Follow me, and we’ll make out better than the others'. It was the most powerful and shrewd of these leaders who, as we shall see, invented and developed specialization. Looking at the total historical pattern of man around the Earth and observing that three quarters of the Earth is water, it seems obvious why men, unaware that they would some day contrive to fly and penetrate the ocean in submarines, thought of themselves exclusively as pedestrians as dry land specialists. Confined to the quarter of the Earth’s surface which is dry land it is easy to see how they came to specialize further as farmers or hunters-or, commanded by their leader, became specialized as soldiers. Less than half of the dry 25 per cent of the Earth’s surface was immediately favorable to the support of human life. Thus, throughout history 99.9 per cent of humanity has occupied only 10 per cent of the total Earth surface, dwelling only where life support was visibly obvious. The favorable land was not in one piece, but consisted of a myriad of relatively small parcels widely dispersed over the surface of the enormous Earth sphere. The small isolated groups of humanity were utterly unaware of one another’s existence. They were everywhere ignorant of the vast variety of very different environments and resource patterns occurring other than where they dwelt. But there were a few human beings who gradually, through the process of invention and experiment, built and operated, first, local river and bay, next, along-shore, then off-shore rafts, dugouts, grass boats, and outrigger sailing canoes. Finally, they developed voluminous ribbellied fishing vessels, and thereby ventured out to sea for progressively longer periods. Developing ever larger and more capable ships, the seafarers eventually were able to remain for months on the high seas. Thus, these venturers came to live normally at sea. This led them inevitably into world-around, swift, fortune-producing enterprise. Thus they became the first world men. The men who were able to establish themselves on the oceans had also to be extraordinarily effective with the sword upon both land and sea. They had also to have great anticipatory vision, great ship designing capability, and original scientific conceptioning, mathematical skill in navigation and exploration techniques for coping in fog, night, and storm with the invisible hazards of rocks, shoals, and currents. The great sea venturers had to be able to command all the people in their dry land realm in order to commandeer the adequate metalworking, woodworking, weaving, and other skills necessary to produce their large, complex ships. They had to establish and maintain their authority in order that they themselves and the craftsmen preoccupied in producing the ship be adequately fed by the food-producing hunters and farmers of their realm. Here we see the specialization being greatly amplified under the supreme authority of the comprehensively visionary and brilliantly coordinated top swordsman, sea venturer. If his 'ship came in' ‹that is, returned safely from its years’ long venturing all the people in his realm prospered and their leader’s power was vastly amplified. There were very few of these top power men. But as they went on their sea ventures they gradually found that the waters interconnected all the world’s people and lands. They learned this unbeknownst to their illiterate sailors, who, often as not, having been hit over the head in a saloon and dragged aboard to wake up at sea, saw only a lot of water and, without navigational knowledge, had no idea where they had traveled. The sea masters soon found that the people in each of the different places visited knew nothing of people in other places. The great venturers found the resources of Earth very unevenly distributed, and discovered that by bringing together various resources occurring remotely from one another one complemented the other in producing tools, services, and consumables of high advantage and value. Thus resources in one place which previously had seemed to be absolutely worthless suddenly became highly valued. Enormous wealth was generated by what the sea venturers could do in the way of integrating resources and distributing the products to the, everywhere around the world, amazed and eager customers. The ship owning captains found that they could carry fantastically large cargoes in their ships, due to nature’s floatability-cargoes so large they could not possibly be carried on the backs of animals or the backs of men. Furthermore, the ships could sail across a bay or sea, traveling shorter distances in much less time than it took to go around the shores and over the intervening mountains. So these very few masters of the water world became incalculably rich and powerful. To understand the development of intellectual specialization, which is our first objective, we must study further the comprehensive intellectual capabilities of the sea leaders in contradistinction to the myriad of physical, muscle, and craft-skill specializations which their intellect and their skillful swordplay commanded. The great sea venturers thought always in terms of the world, because the world’s waters are continuous and cover three-quarters of the Earth planet. This meant that before the invention and use of cables and wireless 99.9 per cent of humanity thought only in the terms of their own local terrain. Despite our recently developed communications intimacy and popular awareness of total Earth we, too, in 1969 are as yet politically organized entirely in the terms of exclusive and utterly obsolete sovereign separateness. This sovereign--meaning top-weapons enforced 'national' claim upon humans born in various lands leads to ever more severely specialized servitude and highly personalized identity classification. As a consequence of the slavish 'categoryitis' the scientifically illogical, and as we shall see, often meaningless questions 'Where do you live?' 'What are you?' 'What religion?' 'What race?' 'What nationality?' are all thought of today as logical questions. By the twentyfirst century it either will have become evident to humanity that these questions are absurd and anti-evolutionary or men will no longer be living on Earth. If you don’t comprehend why that is so, listen to me closely.";
+
+  //b.textAlign(Justification.FULLY_JUSTIFIED);
+  var textFrame = b.text(fullertext, 0, 0, pageWidth, pageHeight);
+
+
+  // *** LEADING ***
+  var leading = 12;
+
+  while (textFrame.overflows != true) {
+    leading++;
+    b.typo(textFrame, "leading", leading);
+  }
+  leading--;
+  b.typo(textFrame, "leading", leading);
+
+  while (textFrame.overflows != true) {
+    leading += 0.1;
+    b.typo(textFrame, "leading", leading);
+  }
+  leading -= 0.1;
+  b.typo(textFrame, "leading", leading);
+
+  while (textFrame.overflows != true) {
+    leading += 0.01;
+    b.typo(textFrame, "leading", leading);
+  }
+  leading -= 0.01;
+  b.typo(textFrame, "leading", leading);
+
+
+var words = b.words(textFrame.parentStory);
+
+// *** NOUNS ***
+  
+  //var words = b.words();
+
+   var rs = RiString(fullertext);
+   //var words = rs.words();
+   //var pos = rs.pos();
+
+  var lexicon = RiLexicon();
+  var nouns = lexicon.isNoun("bird");
+  // b.println(nouns);
+
+  // for (var i = 0; i < words.length; i++) {
+  //   if (lexicon.isNoun(words[i])) {
+  //     b.textSize(40);
+  //   }
+  // }
+
+  // for (var i = 0; i < words.length; i++) {
+  //   if (pos[i] === 'nn') {
+  //     b.textSize(40);
+  //   } else {
+  //     b.textSize(10);
+  //   }
+  // }
+
+
+// *** RITA BEISPIELE ***
+
+  // // using RiTa functions
+  // b.println( RiTa.pluralize("mouse") );
+  // b.println( RiTa.getPhonemes("It was a dark and stormy night") );
+
+  // // using the lexicon
+  // var lexicon = RiLexicon();
+  // b.println( lexicon.randomWord() );
+
+  // // random noun from lexicon and pluralizing it
+  // var randomNoun = lexicon.randomWord('nn');
+  // b.println( randomNoun );
+  // b.println( RiTa.pluralize(randomNoun) );
+
+  // // using RiString to get the parts of speech
+  // var s = "It was a dark and stormy night.";
+  // var r = RiString(s);
+  // b.println( r.pos() );
+
+}
+
+
+b.go();
