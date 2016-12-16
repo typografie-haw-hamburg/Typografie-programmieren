@@ -46,33 +46,23 @@ function draw() {
   b.typo(textFrame, "leading", leading);
 
 
-var words = b.words(textFrame.parentStory);
+//var words = b.words(textFrame.parentStory);
 
 // *** NOUNS ***
   
-  //var words = b.words();
 
-   var rs = RiString(fullertext);
-   //var words = rs.words();
-   //var pos = rs.pos();
+   var rs = new RiString(fullertext);
+   var words = rs.words();
+   var pos = rs.pos();
 
-  var lexicon = RiLexicon();
-  var nouns = lexicon.isNoun("bird");
-  // b.println(nouns);
 
-  // for (var i = 0; i < words.length; i++) {
-  //   if (lexicon.isNoun(words[i])) {
-  //     b.textSize(40);
-  //   }
-  // }
-
-  // for (var i = 0; i < words.length; i++) {
-  //   if (pos[i] === 'nn') {
-  //     b.textSize(40);
-  //   } else {
-  //     b.textSize(10);
-  //   }
-  // }
+  for (var i = 0; i < words.length; i++) {
+    if (pos[i] == 'nnn') {
+      b.textSize(40);
+    } else {
+      b.textSize(10);
+    }
+  }
 
 
 // *** RITA BEISPIELE ***
