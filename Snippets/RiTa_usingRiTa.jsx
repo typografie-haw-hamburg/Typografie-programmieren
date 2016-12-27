@@ -1,7 +1,7 @@
-﻿//@includepath "~/Documents/;%USERPROFILE%Documents";
-//@include "basiljs/bundle/basil.js";
-//@include "basiljs/lib/polyfills.js"
-//@include "basiljs/lib/rita-full.js";
+﻿// @includepath "~/Documents/;%USERPROFILE%Documents";
+// @include "basiljs/bundle/basil.js";
+// @include "basiljs/lib/polyfills.js"
+// @include "basiljs/lib/rita-full.js";
 
 
 function draw() {
@@ -15,7 +15,7 @@ function draw() {
   b.println( lexicon.randomWord() );
 
   // random noun from lexicon and pluralizing it
-  var randomNoun = lexicon.randomWord('nn');
+  var randomNoun = lexicon.randomWord("nn");
   b.println( randomNoun );
   b.println( RiTa.pluralize(randomNoun) );
 

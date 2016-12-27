@@ -1,5 +1,5 @@
-﻿//@includepath "~/Documents/;%USERPROFILE%Documents";
-//@include "basiljs/basil.js";
+﻿// @includepath "~/Documents/;%USERPROFILE%Documents";
+// @include "basiljs/basil.js";
 
 
 // demonstrates how to speed up the drawing of many rectangles by grouping rows and duplicating them
@@ -7,7 +7,7 @@
 
 function draw() {
 
-  b.clear(  b.doc()  );
+  b.clear( b.doc() );
 
   b.noFill();
 

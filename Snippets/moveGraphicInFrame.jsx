@@ -1,5 +1,5 @@
-﻿//@includepath "~/Documents/;%USERPROFILE%Documents";
-//@include "basiljs/basil.js";
+﻿// @includepath "~/Documents/;%USERPROFILE%Documents";
+// @include "basiljs/basil.js";
 
 
 // how to move a graphic within an image frame
@@ -7,7 +7,7 @@
 
 function draw() {
 
-  b.clear(  b.doc()  );
+  b.clear( b.doc() );
 
   // import image
   var img = b.image("image.jpg", 0, 0);

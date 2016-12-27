@@ -1,5 +1,5 @@
-﻿//@includepath "~/Documents/;%USERPROFILE%Documents";
-//@include "basiljs/basil.js";
+﻿// @includepath "~/Documents/;%USERPROFILE%Documents";
+// @include "basiljs/basil.js";
 
 
 // how to apply a characterStyle to some text
@@ -7,7 +7,7 @@
 
 function draw() {
 
-  b.clear(  b.doc()  );
+  b.clear( b.doc() );
 
   // save the document in a variable, we need it later to find our style
   var doc = b.doc();

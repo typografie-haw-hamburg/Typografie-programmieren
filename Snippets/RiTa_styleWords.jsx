@@ -1,7 +1,7 @@
-﻿//@includepath "~/Documents/;%USERPROFILE%Documents";
-//@include "basiljs/bundle/basil.js";
-//@include "basiljs/lib/polyfills.js";
-//@include "basiljs/lib/rita-full.js";
+﻿// @includepath "~/Documents/;%USERPROFILE%Documents";
+// @include "basiljs/bundle/basil.js";
+// @include "basiljs/lib/polyfills.js";
+// @include "basiljs/lib/rita-full.js";
 
 // style words based on their parts of speech with RiTa.js
 // requires a modified rita-full.js file, including a splitWords() method
