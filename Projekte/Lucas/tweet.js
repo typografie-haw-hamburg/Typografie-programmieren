@@ -1,3 +1,5 @@
+// Hallo Lucas!
+
 var tweetIncoming;
 console.log('The bot is starting');
 
@@ -28,9 +30,9 @@ function tweetEvent (tweet) {
   //console.log('USER ' + tweet.user.screen_name + '.--- TEXT ' + tweet.text + '.--------------------' + counter)
   var tweetIncoming = JSON.stringify(tweet.text, null, 2);
   console.log(tweetIncoming);
-  
 
-  
+
+
   counter ++
 }
 
