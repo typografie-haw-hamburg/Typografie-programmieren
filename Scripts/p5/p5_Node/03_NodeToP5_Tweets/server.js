@@ -1,4 +1,4 @@
-// Continuously sends random numbers from Node.js to a p5.js sketch
+// Reads a twitter stream and sends tweets from Node.js to p5.js
 
 
 //---- SERVER ----//
