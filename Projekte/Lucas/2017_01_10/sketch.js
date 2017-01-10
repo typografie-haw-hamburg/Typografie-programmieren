@@ -10,7 +10,7 @@ var tempo = setInterval(wordTimer, 1000);
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  frames[0] = new Frame();
+  //frames[0] = new Frame();
 
   // set frame rate if tweets are rushing by too fast
   //frameRate(1);
@@ -18,22 +18,14 @@ function setup() {
 
 function draw() {
   // in the loop each time call for the latest tweet
-  
-  
-  
+
   // debugging
   // text("Anzahl der Tweets: " + tweetsDisplayed.length, 10, 50, 450, 450);
   // text("Dazugehörige Tweet-ID: " + tweetIndex, 10, 100, 450, 450);
   // text("Sekündlicher Wort-Zähler: " + wordIndex, 10, 150, 450, 450);
   // text("Anzahl der Wörter des Tweets: " + tweetsDisplayed[tweetIndex].words.length, 10, 300, 450, 450)
   
-  
   getLatestTweet(); 
-    
-  
-  
-  
-  //frames[0].display();
 }
 
 function getLatestTweet() {
@@ -50,8 +42,8 @@ function gotLatestTweet(latestTweet) {
   // else we push the latest tweet into array
   tweetsDisplayed.push(latestTweet);
   
-  background(255);
   // draw the recent word in latest tweet!
+  background(255);
   textFont('Archivo Narrow');
   textSize(120);
   text(tweetsDisplayed[tweetIndex].words[wordIndex].toUpperCase(), 10, 50, 450, 450);
@@ -65,12 +57,6 @@ function gotLatestTweet(latestTweet) {
   oldID = latestTweet.id;
 }
 
-
-
-
-
-
-
 function wordTimer (){
   wordIndex = wordIndex + 1;
     
@@ -79,11 +65,6 @@ function wordTimer (){
   }
   //console.log(wordIndex);
 }
-
-
-
-
-
 
 function Frame () {
   this.x = 100;
@@ -100,11 +81,7 @@ function Frame () {
     textSize(20);
 
     text(tweetsDisplayed[tweetIndex].words[wordIndex].toUpperCase(), 10, 50, 450, 450);
-
-    
     text("Tweet Nr.: " + tweetIndex + " ", 10, 300, 800, 200);
-    text("Word Nr.: " + wordIndex + " ", 10, 400, 800, 200);
-
-    
+    text("Word Nr.: " + wordIndex + " ", 10, 400, 800, 200);  
   }
 }
