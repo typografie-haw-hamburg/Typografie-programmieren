@@ -51,7 +51,7 @@ function gotLatestTweet(latestTweet) {
   // info
   text("Tweet Nr.: " + tweetIndex + " ", 10, 300, 800, 200);
   text("Word Nr.: " + wordIndex + " ", 10, 400, 800, 200);
-  //text("Anzahl Wörter: " + tweetsDisplayed[tweetIndex].words.length, 10, 500, 800, 200)
+  text("Anzahl Wörter: " + tweetsDisplayed[tweetIndex].words.length, 10, 500, 800, 200) // funktioniert nicht
 
   tweetIndex ++;
   oldID = latestTweet.id;
