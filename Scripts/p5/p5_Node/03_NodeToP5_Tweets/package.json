@@ -1,0 +1,25 @@
+{
+  "name": "twitter-test",
+  "version": "0.0.1",
+  "description": "Node.js to p5.js twitter setup",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "keywords": [
+    "twitter",
+    "test",
+    "twitter-bot",
+    "p5.js"
+  ],
+  "author": "Timo Rychert",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "twit": "^2.2.5"
+  }
+}
