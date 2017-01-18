@@ -36,7 +36,8 @@ function draw() {
   b.addPage();
 
 // inhalts dateien laden
-  var myKurs = b.loadString("1__1_a_TEXT_Beschreibung_VLV.txt");
+  var myKurs = b.loadString("http://www.dropboxusercontent.com/u/13995836/Systemimmanent/0__indexOf_Semesterprojekt.txt");
+  b.println("myKurs: " + myKurs);
   var myPlakat = b.loadString("1__2_a_TEXT_Konzept_Plakataufgabe.txt");
   var myKonzeptGrob = b.loadString("1__2_b_TEXT_Konzept_Grob_Semesterprojekt.txt");
 
@@ -51,7 +52,7 @@ function draw() {
 // sicherheitsbbruch
   counter++;
   if(counter == 20) {
-    break;
+
   }
 
 /*  var myTfHeight = b.itemHeight(myTf);
