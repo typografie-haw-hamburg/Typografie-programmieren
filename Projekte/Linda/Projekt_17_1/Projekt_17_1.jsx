@@ -42,8 +42,14 @@ function draw() {
       var jsonString = b.loadString(addedJsonFile);
       var jsonData = b.JSON.decode(jsonString);
 
+      for (var i = 0; i < jsonData.length; i++) {
+        jsonData[i].corrX = b.map(jsonData[i].x, 0, 1024, -100, 100);
+        jsonData[i].corrY = b.map(jsonData[i].y, 0, 576, -100, 100);
+        jsonData[i].absolute = b.abs(jsonData[i].corrX) + b.abs(jsonData[i].corrY);
+      }
+
       // create stuff for all the questions
-     question1(jsonData[0]);
+      question1(jsonData[0]);
 
       question2(jsonData[1]);
 
@@ -61,10 +67,15 @@ function draw() {
       oldJsonCount = newJsonCount;
 
       //Höchste X-Zahl finden
+      var mostExtremeValue = 0;
+      var mostExtremeAnser = 0;
       for(var i = 0; i < jsonData.length; i++) {
-      var highest = b.max(jsonData[0].x, jsonData[1].x, jsonData[2].x, jsonData[3].x, jsonData[4].x );
+        if(jsonData[i].abolute > mostExtremeValue) {
+          mostExtremeValue = jsonData[i].absolute;
+          mostExtremeAnser = i;
+        }
       }
-      b.println ("Die höchste Zahl ist " + highest); 
+      b.println ("Die höchste Zahl ist " + highest);
     }
 
     b.delay(1000);
