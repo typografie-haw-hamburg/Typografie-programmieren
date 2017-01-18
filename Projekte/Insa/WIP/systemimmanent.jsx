@@ -21,6 +21,7 @@ function draw() {
   var myL = 12.7; // Left Margin
 
 // anfangs seiten hinzufügen
+
   b.addPage();
   b.addPage();
 
@@ -42,7 +43,7 @@ function draw() {
 // inhalts-textframe erstellen
   var myContentTf = b.text(myKurs + "\n" + myPlakat + "\n" + myKonzeptGrob, myT, myL, myW, myH);
 
-// solange der content tf überfließt, mache seiten
+// solange der content tf überfließt, füge seiten hinzu
   while (myContentTf.overflows == true) {
     b.addPage();
   }
