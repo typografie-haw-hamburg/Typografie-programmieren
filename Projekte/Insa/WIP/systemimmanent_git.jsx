@@ -23,7 +23,7 @@ function draw() {
           var myH = 271.6; // Textframe (mm)
           var myT = 12.7; // Top Margin (mm)
           var myL = 12.7; // Left Margin (mm)
-b.margins([top], [right], [bottom], [left], [pageNumber])
+//b.margins([top], [right], [bottom], [left], [pageNumber])
 
 // schrift fürs ganze dokument setzen
   /* b.textFont(myFont);
@@ -88,7 +88,7 @@ b.margins([top], [right], [bottom], [left], [pageNumber])
   b.applyParagraphStyle(myNewTf, "¶ Default Text");
   b.applyParagraphStyle(myOldTf, "¶ Default Text");
 
-// zieht die absätze aus "myTF" und speichert die in die var "myParas"
+// zieht die absätze aus "myTF"s und speichert die in die var "myParas"
   var myParas = b.paragraphs(myNewTf) + b.paragraphs(myOldTf);
 
 
@@ -101,6 +101,7 @@ b.margins([top], [right], [bottom], [left], [pageNumber])
     // b.applyParagraphStyle(myNewTf, "# h1");
   }
 }*/
+
 /*// sicherheitsbbruch
   counter++;
   if(counter == 20) {
