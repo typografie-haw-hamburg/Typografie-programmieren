@@ -23,7 +23,7 @@ function draw() {
           var myH = 271.6; // Textframe (mm)
           var myT = 12.7; // Top Margin (mm)
           var myL = 12.7; // Left Margin (mm)
-
+b.margins([top], [right], [bottom], [left], [pageNumber])
 
 // schrift fürs ganze dokument setzen
   /* b.textFont(myFont);
