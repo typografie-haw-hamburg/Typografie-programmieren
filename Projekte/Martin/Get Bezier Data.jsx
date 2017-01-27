@@ -1,3 +1,6 @@
+// @includepath "~/Documents/;%USERPROFILE%Documents";
+// @include "basiljs/basil.js";
+
 // this script demonstrates how to collect anchor point coordinates of letters in InDesign
 
 function draw() {
@@ -47,31 +50,31 @@ function draw() {
   // wenn dieser fertig geschrieben ist wird er im Array letterInfo.paths mit allen Pfaden des Buchstabens gespeichert
   //
   // die Schleife wird rückwärts durchlaufen, da die Punzen an erster Stelle im Dokument stehen. Auf diese Weise ist der Buchstabenumriss das erste Element im Array.
- 
+
 
 
   for ( var i = myPaths.length - 1; i >= 0; i-- ) {
     var collectedPathPoints = [];
     var myPathPoints = myPaths[i].paths[0].pathPoints;
-   
+
 
     for ( var j = 0; j < myPathPoints.length ; j++ ) {
 
       if ( j < myPathPoints.length - 1) {
-                        
-                           letterInfo.paths[0].p0x = myPathPoints[j].anchor[0], letterInfo.paths[0].p0y = myPathPoints[j].anchor[1], 
+
+                           letterInfo.paths[0].p0x = myPathPoints[j].anchor[0], letterInfo.paths[0].p0y = myPathPoints[j].anchor[1],
                            letterInfo.paths[0].cp0x = myPathPoints[j].rightDirection[0], letterInfo.paths[0].cp0y = myPathPoints[j].rightDirection[1],
                            letterInfo.paths[0].cp1x = myPathPoints[j + 1].leftDirection[0], letterInfo.paths[0].cp1y = myPathPoints[j + 1].leftDirection[1],
                            letterInfo.paths[0].p1x = myPathPoints[j + 1].anchor[0], letterInfo.paths[0].p1y = myPathPoints[j + 1].anchor[1] ;
-      
+
     } else ( j === myPathPoints.length ) {
 
-                          letterInfo.paths[0].p0x = myPathPoints[j].anchor[0], letterInfo.paths[0].p0y = myPathPoints[j].anchor[1], 
+                          letterInfo.paths[0].p0x = myPathPoints[j].anchor[0], letterInfo.paths[0].p0y = myPathPoints[j].anchor[1],
                            letterInfo.paths[0].cp0x = myPathPoints[j].rightDirection[0], letterInfo.paths[0].cp0y = myPathPoints[j].rightDirection[1],
                            letterInfo.paths[0].cp1x = myPathPoints[0].leftDirection[0], letterInfo.paths[0].cp1y = myPathPoints[0].leftDirection[1],
-                           letterInfo.paths[0].p1x = myPathPoints[0].anchor[0], letterInfo.paths[0].p1y = myPathPoints[0].anchor[1] 
+                           letterInfo.paths[0].p1x = myPathPoints[0].anchor[0], letterInfo.paths[0].p1y = myPathPoints[0].anchor[1]
 
-    
+
   }
     letterInfo.paths.push(collectedPathPoints);
   }
