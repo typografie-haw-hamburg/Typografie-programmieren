@@ -68,12 +68,14 @@ function draw() {
       if(j + 1 != positionArray.length) {
 
         // wenn der kommenden Frame auf einer anderen Seite ist, muss das Ende der Linie auf der nächsten Seite liegen
+        // deshalb muss in diesem Fall noch einmal die Seitenbreite (b.width) hinzuaddiert werden
         if(currentWord.page != nextWord.page) {
           var lineEndOffset = b.width;
         } else {
           var lineEndOffset = 0;
         }
 
+        // wenn der Textrahmen um 90° gekippt ist, müssen die Punkte anders berechnet werden
         if(currentWord.angle == 90) {
           xPos = currentWord.hs - currentWord.as;
           yPos = currentWord.be;
@@ -88,6 +90,7 @@ function draw() {
           yPosLine = yPos;
         }
 
+        // das gleiche gilt für das nächste Wort
         if(nextWord.angle == 90) {
           nextXPos = nextWord.hs - nextWord.as;
           nextYPos = nextWord.bs;
