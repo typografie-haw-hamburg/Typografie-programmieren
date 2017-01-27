@@ -5,7 +5,8 @@ function draw() {
 
 // BASICS
                       //b.size( 100, 100);
-                      b.clear(b.doc());
+                      b.close(false);
+                      b.doc();
                       b.units(b.MM);
                       // b.colorMode(b.CMYK);
                       var w = b.width; // Seitenbreite
@@ -17,7 +18,8 @@ function draw() {
 
 
 // You can change this to your liking!
-          var myFont = 'Helvetica\tBold'; // Font Choice
+          var myFont = app.fonts.itemByName("Helvetica"); // Font Choice
+          var myFontStyle = "Bold";
           var myFontSize = 12; // Font Size Choice (pt)
           var myW = 184.6; // Textframe Width (mm)
           var myH = 271.6; // Textframe (mm)
@@ -55,13 +57,15 @@ function draw() {
   var myQuotes = b.loadString("http://dl.dropboxusercontent.com/u/13995836/Systemimmanent/1__3_*_QUOTES_CageFullerTypespaces.txt");
 
 // inhalts-textframe erstellen
-  var myOldTf = b.text(myKurs + "\n" + myPlakat + "\n" + myKonzeptGrob + "\n" + myExpose + "\n" + myKonzeptFein + "\n" + myQuotes, myT, myL, myW, myH);
+  var myOldTf = b.text(myKurs + "\r" + myPlakat + "\r" + myKonzeptGrob + "\r" + myExpose + "\r" + myKonzeptFein + "\r" + myQuotes, myT, myL, myW, myH);
+  var myStory = myOldTf.parentStory;
 
 // variablen werden kreirt mit style-eigenschaften
     var myDefaultProps = {
-      pointSize: myFontSize,
-      fillColor: b.color(255, 0, 0),
       appliedFont: myFont,
+      fontStyle: myFontStyle,
+      pointSize: myFontSize,
+      fillColor: b.color(255, 0, 0)
   };
 
     var myH1Props = {
@@ -72,7 +76,7 @@ function draw() {
   var myDefaultStyle = b.paragraphStyle("¶ Default Text", myDefaultProps);
   var myH1Style = b.paragraphStyle("# h1", myH1Props);
 
-  b.applyParagraphStyle(myOldTf, "¶ Default Text");
+  b.applyParagraphStyle(myStory, "¶ Default Text");
 
 // solange der content tf überfließt, füge seiten hinzu
   while (myOldTf.overflows == true) {
@@ -85,22 +89,36 @@ function draw() {
   b.page(4);
 
 // paragraphStyle "default" wird auf den neuen TF angewendet
-  b.applyParagraphStyle(myNewTf, "¶ Default Text");
-  b.applyParagraphStyle(myOldTf, "¶ Default Text");
+  // b.applyParagraphStyle(myNewTf, "¶ Default Text");
+  // b.applyParagraphStyle(myOldTf, "¶ Default Text");
+
+
 
 // zieht die absätze aus "myTF"s und speichert die in die var "myParas"
-  var myParas = b.paragraphs(myNewTf) + b.paragraphs(myOldTf);
+  var myParas = b.paragraphs(myStory);
 
 
- // wenn du eine # h1 findest, appliziere den entsprechenden style
-/*for(var i = 0; i < myParas.length; i++) {
-  if (b.startsWith(myParas.contents, "#") == true) {
-    b.println("Hat funktioniert");
-    // b.typo(   myParas, "baselineShift", 20 );
-    // b.applyParagraphStyle(myOldTf, "# h1");
-    // b.applyParagraphStyle(myNewTf, "# h1");
+var myNewPSG = b.doc().paragraphStyleGroups.add();
+myNewPSG.name = "Bla";
+
+myDefaultStyle.move(LocationOptions.AT_BEGINNING, myNewPSG);
+
+
+for (var i = 0; i < myParas.length; i++) {
+  if (b.startsWith(myParas[i].contents, "###") == true) {
+    b.println("H3");
+    b.applyParagraphStyle(myParas[i], "# h1");
+    continue;
   }
-}*/
+  if (b.startsWith(myParas[i].contents, "##") == true) {
+    b.println("H2");
+    continue;
+  }
+  if (b.startsWith(myParas[i].contents, "#") == true) {
+    b.println("H1");
+  }
+}
+
 
 /*// sicherheitsbbruch
   counter++;
