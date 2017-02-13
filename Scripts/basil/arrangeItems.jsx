@@ -2,7 +2,7 @@
 // @include "basiljs/basil.js";
 
 
-// how to apply a characterStyle to some text
+// how to arrange items in front or behind each other
 
 
 function draw() {
