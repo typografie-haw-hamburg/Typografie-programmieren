@@ -1,15 +1,47 @@
 Vorgehensweise im Skript
 
-  ❑ 0. Grundlinienraster & Margin setzen
+  ✔ 0. Grundlinienraster & Margin setzen
+  ✔ Single Pages
   ✔ 1. .txt reinladen aus Dropbox über URL
   ✔ 2. Textframe setzen auf entsprechend viele Seiten
   ✔ 3. Absatzvorlagen hinzufügen
   ❑   3.2 Absatzvorlagen definieren
-        ⁇ ❑ Herausfinden, wie der native Name der M+ Font ist (Java?)
+          ✔ Herausfinden, wie der native Name der M+ Font ist
           ❑ Herausfinden, wie die Absatzvorlageeinstellungen in Basil heißen
-  ❑⁇4. Textframe analysieren (if-Abfrage) und Vorlagen applizieren
-  ❑ 5. Seitenzahl 1 auf letzte Seite
-  ❑ 6. Dokument als PDF speichern
+  ✔ 4. Textframe analysieren (if-Abfrage) und Vorlagen applizieren
+  ✔ 5. Leere Umbrüche löschen
+  ❑ 6. Seitenzahl 1 auf letzte Seite
+  ❑ 7. Dokument als PDF speichern
+
+  ❑ if else if
+
+
+
+
+
+
+
+  facingPages = false;
+
+  //b.margins([top], [right], [bottom], [left], [pageNumber])
+
+var myGridPreferences = myDocument.gridPreferences;
+myGridPreferences.baselineDivision = 14;
+myGridPreferences.baselineStart = 70;
+myGridPreferences.baselineGridShown = true;
+
+✔ Warum bezieht sich die Default Vorlagen-Applikation nur auf den 1. & letzten?
+✔ Mein if Ding geht nicht
+- Kann man bei b.applyParagraph mehrere TFs angeben?
+✔ Kann man Absatzvorlagen-Ordner erstellen
+
+
+
+
+
+alignToBaseline: true,
+leftIndent: -3,
+
 
 
 
