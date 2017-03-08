@@ -11,11 +11,13 @@ function draw() {
   // Create Document variable
       var myDocument = app.documents.add();
 
+      b.size(400, 400);
+
   // Set to Single Pages
       var myDocumentPreferences = myDocument.documentPreferences
           myDocumentPreferences.facingPages = false;
-          myDocumentPreferences.pageWidth = 203;
-          myDocumentPreferences.pageHeight = 330;
+          // myDocumentPreferences.pageWidth = 203;
+          // myDocumentPreferences.pageHeight = 330;
 
   // Adjust Baseline Grid
       var myGridPreferences = myDocument.gridPreferences;
@@ -51,8 +53,8 @@ function draw() {
 
   // Save default document font family & size in variable
       // b.colorMode(b.CMYK);
-      var myFont = app.fonts.itemByName("M+ 1m\tthin");
-      var my2ndFont = app.fonts.itemByName("M+ 1m\tregular");
+      var myFont = app.fonts.itemByName("Arial");
+      var my2ndFont = app.fonts.itemByName("Arial");
       var myFontSize = 12; // Font Size Choice (pt)
       var myFontLeading = 15;
 
@@ -68,8 +70,18 @@ function draw() {
       b.page(2);
 
   // Your public cloud folder path
-      var myURL = "http://dl.dropboxusercontent.com/u/13995836/Systemimmanent/";
-      var myTxt = ".txt";
+      // var myURL = "http://dl.dropboxusercontent.com/u/13995836/Systemimmanent/";
+      // var myTxt = ".txt";
+
+      //var dataFolder = Folder.selectDialog("Wähle bitte den Ordner mit Textdateien aus.");
+      var dataFolder = Folder("~/Dropbox/Systemimmanent");
+      var myFiles = dataFolder.getFiles("*.txt");
+
+      var mainString = "";
+
+      for (var i = 0; i < myFiles.length; i++) {
+        mainString += b.loadString(myFiles[i]);
+      }
 
   // Import "Index" file
       var myIndex = b.loadString(myURL + "00 # Index" + myTxt);
@@ -107,19 +119,19 @@ function draw() {
       var myDefaultStyle = b.paragraphStyle("Default", myDefaultProps);
 
       var mySymbolProps = {
-        basedOn: "Default",
+        basedOn: myDefaultStyle,
         appliedFont: my2ndFont,
       };
       var myH1Props = {
-        basedOn: "Default",
+        basedOn: myDefaultStyle,
         fillColor: b.color(0, 255, 0),
       };
       var myH2Props = {
-        basedOn: "Default",
+        basedOn: myDefaultStyle,
         fillColor: b.color(0, 255, 255),
       };
       var myH3Props = {
-        basedOn: "Default",
+        basedOn: myDefaultStyle,
         fillColor: b.color(0, 0, 255),
       };
 
@@ -151,6 +163,12 @@ function draw() {
   // Jump to Page 4
       b.page(4);
 
+  // Remove empty line breaks
+      app.findGrepPreferences=app.changeGrepPreferences=null;
+      app.findGrepPreferences.findWhat="(?<=\r)\r+";
+      app.changeGrepPreferences.changeTo="";
+      app.activeDocument.changeGrep();
+
   // Save paragraphs into variable
       var myParas = b.paragraphs(myStory);
 
@@ -172,19 +190,26 @@ function draw() {
         }
       }
 
-
   // Apply character styles for symbols
-      for (var i = 0; i < myCharas.length; i++) {
-        if (myCharas[i].contents == "#") {
-          b.applyCharacterStyle(myCharas[i], "*#- Symbols");
-        }
-      }
+      for (var i = 0; i < myParas.length; i++) {
+        var myParaLength = myParas[i].length;
+        var myParaChars = b.characters(myParas[i]);
+        var j = 0;
+        while(myParaChars[j].contents == "#" ||
+             myParaChars[j].contents == "@" ||
+             myParaChars[j].contents == ")") {
 
-  // Remove empty line breaks
-      app.findGrepPreferences=app.changeGrepPreferences=null;
-      app.findGrepPreferences.findWhat="(?<=\r)\r+";
-      app.changeGrepPreferences.changeTo="";
-      app.activeDocument.changeGrep();
+            b.applyCharacterStyle(myParaChars[j], "*#- Symbols");
+            j++;
+
+            if(j > 2 ||
+               j > myParaLength) {
+              break;
+            }
+         }
+       }
+
+
 
   // Find out the last page
       var myLastPage = b.pageCount();
