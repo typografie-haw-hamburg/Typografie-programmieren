@@ -10,16 +10,22 @@ Vorgehensweise im Skript
           ❑ Herausfinden, wie die Absatzvorlageeinstellungen in Basil heißen
   ✔ 4. Textframe analysieren (if-Abfrage) und Vorlagen applizieren
   ✔ 5. Leere Umbrüche löschen
-  ❑ 6. Seitenzahl 1 auf letzte Seite
-  ❑ 7. Dokument als PDF speichern
-
-  ❑ if else if
+  ✔ 6. Seitenzahl 1 auf letzte Seite
+  ✔ 7. Dokument als PDF speichern
 
 
 
 
-
-
+$.ajax({
+    url : myPathURL,
+    success: function (data) {
+        $(data).find("a").attr("href", function (i, val) {
+            if( val.match(/\.(jpe?g|png|gif|txt)$/) ) {
+                $("body").append( "<img src='"+ myPathURL + val +"'>" );
+            }
+        });
+    }
+});
 
   facingPages = false;
 
