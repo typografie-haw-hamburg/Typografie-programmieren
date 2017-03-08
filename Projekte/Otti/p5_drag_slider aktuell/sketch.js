@@ -2,6 +2,11 @@ var mainCircle;
 var vertSlider;
 var lineCount = 70;
 var vertMin, vertMax, horMin, horMax;
+var table;
+
+function preload() {
+  table = loadTable("data/daten.csv", "csv", "header");
+}
 
 function setup() {
   createCanvas(1300,1000);
@@ -54,15 +59,28 @@ function draw() {
   var lineColor = color( map(horSlider.xPos, horMin, horMax, 255, 155) );
   var lineCount = floor( map(vertSlider.yPos, height / 5, height / 5 * 4, 1, 20) );
   stroke(lineColor);
-  for (var i = 1; i < lineCount; i++) {
+  for (var i = 0; i < table.getRowCount(); i++) {
     var lineYPos = height / 2 - 100 + (i * 5);
+    
+    print("Test");
+    
+    
+
+    var wellenLaenge = table.getNum(i, "Wellenlaenge");
+    var silizium = table.getNum(i, "Silizium");
+    
+    // Umwandlung in richtigen Wertebereich
+    wellenLaenge = map(wellenLaenge, 2.494, 2.5, 280, 320);
+    silizium = map(silizium, -0.5, 4, 280, 320);
+    
+    print("Test2");
      
     //Linie Lichtquelle
      line(mainCircle.xPos,mainCircle.yPos, 700, 300 / (lineCount - 1) * i+400);
     //Linie Wellenlaenge
-     line(700 ,300 / (lineCount - 1) * i+400, 300, 300 / (lineCount - 1) * i+400);
+     line(700 ,300 / (lineCount - 1) * i+400, wellenLaenge, 300 / (lineCount - 1) * i+400);
      //Linie Silizium
-     line(300 ,300 / (lineCount - 1) * i+400, 200, 300 / (lineCount - 1) * i+300);
+     line(silizium ,300 / (lineCount - 1) * i+400, 200, 300 / (lineCount - 1) * i+300);
    
   }
 
