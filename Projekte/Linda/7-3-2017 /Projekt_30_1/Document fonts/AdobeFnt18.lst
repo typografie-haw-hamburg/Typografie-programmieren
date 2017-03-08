@@ -1,0 +1,293 @@
+%!Adobe-FontList 1.18
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:DrukWide-Bold
+FamilyName:Druk Wide
+StyleName:Bold
+MenuName:Druk Wide
+StyleBits:2
+WeightClass:700
+WidthClass:7
+AngleClass:0
+FullName:Druk Wide Bold
+WritingScript:Roman
+OutlineFileName:\Druk Wide Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:116672
+FileModTime:1488970718
+NameArray:0,Mac,18,Druk Wide Bold
+NameArray:0,Mac,4,Druk Wide Bold
+NameArray:0,Win,1,Druk Wide
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Druk-WideMedium
+FamilyName:Druk Wide
+StyleName:Medium
+MenuName:Druk Wide
+StyleBits:0
+WeightClass:500
+WidthClass:7
+AngleClass:0
+FullName:Druk Wide Medium
+WritingScript:Roman
+OutlineFileName:\Druk Wide Medium.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:101232
+FileModTime:1488970718
+NameArray:0,Mac,18,Druk Wide Medium
+NameArray:0,Mac,4,Druk Wide Medium
+NameArray:0,Win,1,Druk Wide
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Helvetica
+FamilyName:Helvetica
+StyleName:Regular
+MenuName:Helvetica
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Helvetica
+WritingScript:Roman
+OutlineFileName:\Helvetica.dfont
+DataFormat:sfntResource
+ResourceID:25595
+hasSVG:no
+FileLength:2562874
+FileModTime:1488970718
+NameArray:0,Mac,18,Helvetica
+NameArray:0,Mac,4,Helvetica
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Helvetica-Bold
+FamilyName:Helvetica
+StyleName:Bold
+MenuName:Helvetica
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Helvetica Bold
+WritingScript:Roman
+OutlineFileName:\Helvetica.dfont
+DataFormat:sfntResource
+ResourceID:28517
+hasSVG:no
+FileLength:2562874
+FileModTime:1488970718
+NameArray:0,Mac,4,Helvetica Bold
+NameArray:0,Mac,4,Helvetica lihava
+NameArray:0,Mac,4,Helvetica Gras
+NameArray:0,Mac,4,Helvetica Fett
+NameArray:0,Mac,4,Helvetica grassetto
+NameArray:0,Mac,4,Helvetica vet
+NameArray:0,Mac,4,Helvetica Fet
+NameArray:0,Mac,4,Helvetica Negrita
+NameArray:0,Mac,4,Helvetica Carregado
+NameArray:0,Mac,4,Helvetica Halvfet
+NameArray:0,Mac,18,Helvetica Bold
+NameArray:4,Mac,4,Helvetica‭ ‬أسود
+NameArray:4,Mac,4,Helvetica‭ ‬برجسته
+NameArray:5,Mac,4,Helvetica‭ ‬עבה
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Helvetica-Oblique
+FamilyName:Helvetica
+StyleName:Oblique
+MenuName:Helvetica
+StyleBits:1
+WeightClass:400
+WidthClass:5
+AngleClass:1
+FullName:Helvetica Oblique
+WritingScript:Roman
+OutlineFileName:\Helvetica.dfont
+DataFormat:sfntResource
+ResourceID:22365
+hasSVG:no
+FileLength:2562874
+FileModTime:1488970718
+NameArray:0,Mac,18,Helvetica Oblique
+NameArray:0,Mac,4,Helvetica Oblique
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Helvetica-BoldOblique
+FamilyName:Helvetica
+StyleName:Bold Oblique
+MenuName:Helvetica
+StyleBits:3
+WeightClass:700
+WidthClass:5
+AngleClass:1
+FullName:Helvetica Bold Oblique
+WritingScript:Roman
+OutlineFileName:\Helvetica.dfont
+DataFormat:sfntResource
+ResourceID:6413
+hasSVG:no
+FileLength:2562874
+FileModTime:1488970718
+NameArray:0,Mac,18,Helvetica Bold Oblique
+NameArray:0,Mac,4,Helvetica Bold Oblique
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Helvetica-Light
+FamilyName:Helvetica
+StyleName:Light
+MenuName:Helvetica
+StyleBits:0
+WeightClass:300
+WidthClass:5
+AngleClass:0
+FullName:Helvetica Light
+WritingScript:Roman
+OutlineFileName:\Helvetica.dfont
+DataFormat:sfntResource
+ResourceID:22375
+hasSVG:no
+FileLength:2562874
+FileModTime:1488970718
+NameArray:0,Mac,18,Helvetica Light
+NameArray:0,Mac,4,Helvetica Light
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Helvetica-LightOblique
+FamilyName:Helvetica
+StyleName:Light Oblique
+MenuName:Helvetica
+StyleBits:1
+WeightClass:300
+WidthClass:5
+AngleClass:1
+FullName:Helvetica Light Oblique
+WritingScript:Roman
+OutlineFileName:\Helvetica.dfont
+DataFormat:sfntResource
+ResourceID:6513
+hasSVG:no
+FileLength:2562874
+FileModTime:1488970718
+NameArray:0,Mac,18,Helvetica Light Oblique
+NameArray:0,Mac,4,Helvetica Light Oblique
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Helvetica
+OutlineFileName:\Helvetica.dfont
+ResourceID:21
+MacStyle:0
+FileLength:2562874
+FileModTime:1488970718
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Helvetica-Bold
+OutlineFileName:\Helvetica.dfont
+ResourceID:21
+MacStyle:1
+FileLength:2562874
+FileModTime:1488970718
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Helvetica-Oblique
+OutlineFileName:\Helvetica.dfont
+ResourceID:21
+MacStyle:2
+FileLength:2562874
+FileModTime:1488970718
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Helvetica-BoldOblique
+OutlineFileName:\Helvetica.dfont
+ResourceID:21
+MacStyle:3
+FileLength:2562874
+FileModTime:1488970718
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Helvetica-Light
+OutlineFileName:\Helvetica.dfont
+ResourceID:211
+MacStyle:0
+FileLength:2562874
+FileModTime:1488970718
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:Helvetica-LightOblique
+OutlineFileName:\Helvetica.dfont
+ResourceID:211
+MacStyle:2
+FileLength:2562874
+FileModTime:1488970718
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:SuisseBPIntl-Regular
+FamilyName:SuisseBPIntl-Regular
+StyleName:Regular
+MenuName:SuisseBPIntl-Regular
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:SuisseBPIntl-Regular
+WritingScript:Roman
+OutlineFileName:\SuisseBPIntl-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:41920
+FileModTime:1488970718
+NameArray:0,Mac,4,SuisseBPIntl-Regular
+NameArray:0,Win,1,SuisseBPIntl-Regular
+%EndFont
+

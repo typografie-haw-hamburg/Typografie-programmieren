@@ -6,6 +6,9 @@ import de.looksgood.ani.*;
 //Problem: Meine Daten werden nicht in der Json-Datei gespeichert
 //und ich finde den Fehler nicht :(
 
+      int timer;
+      boolean timerRunning;
+
    //colors
       float r, g, b;
       color bgColor;
@@ -28,7 +31,7 @@ import de.looksgood.ani.*;
       PFont Druk, Suisse;
 
 //––– question preset ––––
-              int i;
+              int i = -1;
               int userId = 1;
               int startTime;
 
@@ -43,7 +46,7 @@ import de.looksgood.ani.*;
                 "erregt"};
 
       // question counter2
-              int j;
+              int j = -1;
 
               JSONArray answers2 = new JSONArray();
               String[] questions2 = {
@@ -54,7 +57,7 @@ import de.looksgood.ani.*;
                 "entspannt"};
 
      // question counter3
-              int k;
+              int k = -1;
 
               JSONArray answers3 = new JSONArray();
               String[] questions3 = {
@@ -65,7 +68,7 @@ import de.looksgood.ani.*;
                 "genervt"};
 
      // question counter4
-              int l;
+              int l = -1;
 
               JSONArray answers4 = new JSONArray();
               String[] questions4 = {
@@ -113,9 +116,17 @@ void setup() {
 }
 
 void draw() {
-
-  println(i);
-
+  
+  if(timerRunning == true) {
+    if(millis() > (timer + 5000)) {
+      i = -1;
+      j = -1;
+      k = -1;
+      l = -1;
+      timerRunning = false;
+    }
+  }
+  
           
   r = map(mouseX, 0, width, 0, 255);
   g = map(mouseY, 0, height, 0, 255);
@@ -130,7 +141,7 @@ void draw() {
 
 
            
-           if((i < 5)&&(j < 5)&&(k < 5)&&(l < 5)) {
+          if(i < 5 && i >= 0) {
           
           fill(255);
           textAlign(LEFT);
@@ -178,11 +189,19 @@ void draw() {
             line(width / 2 - 25, mY, width / 2 + 23, mY);
             
    // Letzte Seite: Thank you-Screen
-            } else {
+            } else if (i >= 5) {
               fill(255);
                textFont(Druk);
                textSize(25);
                 text("Vielen Dank für die Teilnahme.", width/2, height/2 - 40);
+              textFont(Suisse);
+              textSize(15);
+              text("Deine Karte wird erstellt.\n Zum Fortfahren eine Taste drücken.", width/2, height/2 - 10);
+            } else {
+              fill(255);
+               textFont(Druk);
+               textSize(25);
+                text("Willkommen bla.", width/2, height/2 - 40);
               textFont(Suisse);
               textSize(15);
               text("Deine Karte wird erstellt.\n Zum Fortfahren eine Taste drücken.", width/2, height/2 - 10);
@@ -195,7 +214,7 @@ void draw() {
 void mouseClicked() {
 
 
-    if ((i < 5)&&(j < 5)&&(k < 5)&&(l < 5)){
+    if (i >= 0 && i < 5){
 
       JSONObject answer1 = new JSONObject();
 
@@ -248,18 +267,20 @@ void mouseClicked() {
 }
 
 void mouseReleased () {
-    if((i < 5)&&(j < 5)&&(k < 5)&&(l < 5)) {
-      seq.start ();
+    if(i < 5) {
+      println("TestMouse");
+      println(i);
+      seq.start();
     }
 }
 void keyReleased() {
 
   // if all questions have been answered and a key is pressed, a new round of questions starts
   if(i > 4) {
-     i = 0;
-     j = 0;
-     k = 0;
-     l = 0;
+     i = -1;
+     j = -1;
+     k = -1;
+     l = -1;
 
   }
 
@@ -277,15 +298,20 @@ class Circle {
 }
 
 void nextSlide () {
-  if ((i < 5)&&(j < 5)&&(k < 5)&&(l < 5)) {
+  println("Test");
+  if (i < 5) {
     i++;
     j++;
     k++;
     l++;
   } else {
-    i = 0;
-    j = 0;
-    k = 0;
-    l = 0;
+    i = -1;
+    j = -1;
+    k = -1;
+    l = -1;
+  }
+  if(i == 5) {
+    timerRunning = true;
+    timer = millis();
   }
 }

@@ -32,8 +32,7 @@ function draw()
   // count all JSON files that are in the folder
   var oldJsonCount = dataFolder.getFiles("*.json").length;
 
-  while(b.millis() < 120000) {
-
+  while(b.millis() < 30000) {
 
     var jsonFiles = dataFolder.getFiles("*.json");
     var newJsonCount = jsonFiles.length;
@@ -41,6 +40,14 @@ function draw()
     // a new JSON file was added
     if (newJsonCount > oldJsonCount)
     {
+
+
+      // InDesign aktivieren
+      File(app.fullName).execute();
+      app.activate();
+
+      b.clear(b.doc());
+      b.resetMatrix();
 
       // the new file is the last of all JSON files
       var addedJsonFile = jsonFiles[newJsonCount - 1];
@@ -659,6 +666,23 @@ function draw()
     b.println(currentEmotion + " is V" + emotions[currentEmotion].v);
   }
 
+  // alle Emotionen mit der höchsten Punktzahl sammeln
+  var topEmotions = [];
+
+  for (var i = 0; i < emotionNames.length; i++) {
+    var currentEmotionName = emotionNames[i];  // anger, disgust ...
+    var currentEmotion = emotions[currentEmotionName];
+
+    if(currentEmotion.points == highestEmotionPoints) {
+      topEmotions.push(currentEmotionName);
+    }
+  }
+
+  // dominante Emotion aus den höchstbewerteten Emotionen auswählen
+  var randomNumber = b.floor(b.random(0, topEmotions.length));
+  dominantEmotion = topEmotions[randomNumber];
+
+
 
 // Bei V1 oder V2-Zuordnung, bestimmt die Emotion die Farbgebung:
   if(emotions[dominantEmotion].v == 1 || emotions[dominantEmotion].v == 2)
@@ -827,87 +851,69 @@ function draw()
 //++++++++++++++++++++++++++++++Emotion functions+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*
 //PANIC//*****************************************************************************************************************************
 //Farbgebung Panic: 0/Hellgrau, 1/Mittelgrau, 2/Dunkelgrau, 3/Orange
-if(panicPoints > 8)
+if(panicPoints >= v1)
 {
+  b.println("Panic V1");
 
   b.fill(dominantColors[3]);
 
 
-
-      /*
-        var itemWidth = ((b.width - 24)/4)/4;
-        var BeginX = (((b.width - 24)/4)/4)/2;
-        var BeginY = (((b.width - 24)/4)/4)/2;
-        var itemDistanceX = (((b.width - 24)/4)/4)/2;
         var itemDistanceY = 10;
 
         var itemHeight = b.height - 2 * ((((b.width - 24)/4)/4)/2) ;
         var itemsX = 8;
         var itemsX = 1;
-      */
 
-    Panic ( 1, 11.625, 5.8125, 5.8125, 5.8125, 1, 285.375, 8, 1, dominantColors  );
-    //( v, itemWidth, BeginX, BeginY, itemDistanceX, itemDistanceY,itemHeight, itemsX, itemsY, dominantColors)
+  b.println("itemDistanceY 01: " + itemDistanceY);
 
-} else if (panicPoints > 6)
-{
+    Panic ( 1, itemDistanceY,itemHeight, itemsX, itemsY, dominantColors );
 
+} else if (panicPoints >= v2) {
+// ##Panic V2
+  b.println("Panic V2");
   b.fill(dominantColors[3]);
 
-      /*
-        var itemWidth = ((b.width - 24)/4)/4;
-        var BeginX = (((b.width - 24)/4)/4)/2;
-        var BeginY = (((b.width - 24)/4)/4)/2;
-        var itemDistanceX = (((b.width - 24)/4)/4)/2;
-        var itemDistanceY = (((b.width - 24)/4)/4)/2;;
+        var itemDistanceY = (((b.width - 24)/4)/4)/2;
+
+        b.println("itemDistanceY 01: " + itemDistanceY);
 
         var itemHeight = b.height/5 - 1.25 * ((((b.width - 24)/4)/4)/2);
         var itemsX = 8;
         var itemsY = 5;
-      */
-
-    Panic ( 2, 11.625, 5.8125,5.8125, 5.8125,5.8125, 5.8125,5.8125, 5.8125, 7 ,52.135375, 8, 5, dominantColors);
-    //( v, itemWidth, BeginX, BeginY, itemDistanceX, itemDistanceY,itemHeight, itemsX, itemsY, dominantColors)
 
 
-} else if (panicPoints > 3)
-{
+    Panic ( 2, itemDistanceY,itemHeight, itemsX, itemsY, dominantColors );
+    //
 
+
+} else if (panicPoints >= v3) {
+  b.println("Panic V3");
 
   b.fill(dominantColors[0]);
 
-      /*
-        var itemWidth = ((b.width - 24)/4)/4;
-        var BeginX = (((b.width - 24)/4)/4)/2;
-        var BeginY = (((b.width - 24)/4)/4)/2;
-        var itemDistanceX = (((b.width - 24)/4)/4)/2;
         var itemDistanceY = 80;
 
         var itemHeight = b.height/5 - 4 * ((((b.width - 24)/4)/4)/2);
         var itemsX = 8;
         var itemsY = 5;
-      */
 
-    Panic ( 3, 11.625,  5.8125,  5.8125,  5.8125, 20, 36.15, 8, 5, dominantColors);
+
+    Panic ( 3, itemDistanceY,itemHeight, itemsX, itemsY, dominantColors);
     //( v, itemWidth, BeginX, BeginY, itemDistanceX, itemDistanceY,itemHeight, itemsX, itemsY, dominantColors)
 
-} else if (panicPoints > 1)
+} else if (panicPoints >= v4)
 {
 
     b.fill(dominantColors[0]);
-        /*
-        var itemWidth = ((b.width - 24)/4)/4;
-        var BeginX = ( ((b.width - 24)/4)/4)/2;
-        var BeginY = ( ((b.width - 24)/4)/4)/2;
-        var itemDistanceX = ( ((b.width - 24)/4)/4)/2;
+
         var itemDistanceY = 125;
 
         var itemHeight = b.height/5 - 6 * (( ((b.width - 24)/4)/4)/2);
         var itemsX = 8;
         var itemsY = 5;
-      */
 
-    Panic ( 4, 11.625, 5.8125, 5.8125, 5.8125, 30, 24.525, 8, 5, dominantColors); //( v, itemWidth, BeginX, BeginY, itemDistanceX, itemDistanceY,itemHeight, itemsX, itemsY, dominantColors)
+
+    Panic ( 4, itemDistanceY,itemHeight, itemsX, itemsY, dominantColors); //( v, itemWidth, BeginX, BeginY, itemDistanceX, itemDistanceY,itemHeight, itemsX, itemsY, dominantColors)
 }
 
 
@@ -915,7 +921,7 @@ if(panicPoints > 8)
 //Farbgebung Anger: 0/Hellgrau, 1/Mittelgrau, 2/Dunkelgrau, 3/Rot
 
 
-if(angerPoints > 8)
+if(angerPoints >= 8)
 {
 
             /* var a = 40;
@@ -3169,29 +3175,37 @@ if (dominantEmotion == "anger") {
               b.typo (text5, "appliedFont", "Druk Wide\tMedium");
               b.typo (text5, "pointSize", 26);
 
-              b.textAlign(Justification.RIGHT_ALIGN);
               var  text5 =  b.text( "NOW",
               b.width-10, 85, 80, 30);
 
               b.typo (text5, "appliedFont", "Druk Wide\tMedium");
               b.typo (text5, "pointSize", 26);
 
-}
+              b.textAlign(Justification.LEFT_ALIGN);
 
 //SAVE-PDF SETUPS
 
       // export the file and reset the document
-      b.savePDF("/export/Poster_" + newJsonCount +  ".pdf", false);
-      //b.clear(b.doc());
+      b.savePDF("/export/Poster_" + newJsonCount + ".pdf", false);
+
+      //b.doc().print(false);
+
+      // Druckdelay
+      //b.delay(30000);
 
       // new count becomes the new old count
       oldJsonCount = newJsonCount;
 
-    }
+}// PosterProzess-Ende
 
 
 
-    b.delay(1000);
+
+      b.delay(1000);
+    }// while loop
+
+
+
 }
 
 b.go();
@@ -3208,26 +3222,22 @@ b.go();
 
 //PANIC************************************************************************************************************************************
 
-function Panic ( v, itemWidth, BeginX, BeginY, itemDistanceX, itemDistanceY,itemHeight, itemsX, itemsY, dominantColors)
-{
+function Panic ( v, itemDistanceY,itemHeight, itemsX, itemsY, dominantColors) {
+b.resetMatrix();
 
+  var itemWidth = ((b.width - 24)/4)/4;
+  var BeginX = ( ((b.width - 24)/4)/4)/2;
+  var BeginY = ( ((b.width - 24)/4)/4)/2;
+  var itemDistanceX = ( ((b.width - 24)/4)/4)/2;
+
+
+b.println("itemDistanceY: " + itemDistanceY);
   for (var i = 0; i < itemsX; i++) {
 
     for (var j = 0; j < itemsY; j++) {
       b.rect (BeginX + i * 4 * itemDistanceX, BeginY + j  * (itemHeight + itemDistanceY) , itemWidth, itemHeight );
     }
   }
-
-              /*  var PanicLightGrey = b.color(118,119,113);
-                var PanicMiddleGrey = b.color(60,58,59);
-                var PanicDarkGrey = b.color(26,25,18);
-                var PanicOrange = b.color(233,78,36);
-
-                var neutralLight = PanicLightGrey;
-                var neutralMiddle = PanicMiddleGrey ;
-                var neutralDark = PanicDarkGrey;
-                var neutralHighlight = PanicOrange; */
-
 
 
 
