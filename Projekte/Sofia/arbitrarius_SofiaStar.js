@@ -65,9 +65,9 @@ var outlinePathCount = app.selection[0].paths.count();
     }//for loop außen
 
 
-app.documents.item(0).print();
-DocumentPrintUiOptions.SUPPRESS_FILE_SAVE_DIALOG(true);
-DocumentPrintUiOptions.SUPPRESS_PRINT_DIALOG;
+  b.doc().print(false);
+  var exportFile = File("~/Desktop/bla" + b.millisecond() +".pdf");
+  b.doc().exportFile(ExportFormat.pdfType, exportFile);
 }
 
 b.go();
