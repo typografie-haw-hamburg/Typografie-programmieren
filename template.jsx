@@ -3,6 +3,7 @@
 
 function draw() {
 
+  b.println("Hallo");
 
 }
 
