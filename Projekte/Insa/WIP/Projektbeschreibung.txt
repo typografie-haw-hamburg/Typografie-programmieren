@@ -1,10 +1,1 @@
-Ich schreibe ein Script, das meine in Markdown notierten Texte aus der Cloud abruft, in InDesign zusammenfügt und Absatzvorlagen erstellt + appliziert. Die Zuordnung der Absatzvorlagen soll über das Zeichen-System in Markdown geschehen. Dabei arbeite ich mit einer einzigen Schriftgröße und stelle Hierarchien durch Schnitte und Weißraum dar.
-
-Vorgehensweise im Script:
-
-  ⁇ 0. Dateien von URL laden
-  ✔ 1. .txt lokal reinladen
-  ⁇ 2. Textframe setzen auf viele Seiten
-    3. ParagraphStyles kreiren
-    4. Textframe analysieren -> if-Abfrage
-    5. ParagraphStyles applizieren
+‚Systemimmanent‘ ist eine umfangreiche Kollage aus Gedächtnisprotokollen und wissenschaftlichen Texten – eine Reflexion des gesamten Kursverlaufs sowie dessen Auswirkung auf den ohnehin schon systematisch geprägten Alltag von Insa. Die Texte wurden in einem speziellen Texteditor geschrieben und mit Hilfe eines ‚Markdown‘-ähnlichen Auszeichnungsystems strukturiert. Ihnen wurden zuvor gestaltete Absatz- und Zeichenformate von einem Skript zugeordnet. So konnten die Texte per Knopfdruck in InDesign importiert und automatisch gesetzt werden.
