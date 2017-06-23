@@ -4,6 +4,8 @@ von Jens Schnitzler
 
 _[Bilder](https://drive.google.com/drive/folders/0B8AFNfD3N_NVajFaRlVvMzNhNEU?usp=sharing)_
 
+_[Video](https://youtu.be/RHM9zSr6DO0)_
+
 _Script: 170623_ssm_plakat-generator_js.jsx_
 
 Das Projekt umfasst zwei Hefte und eine generierte Plakatserie.
