@@ -2,6 +2,9 @@
 
 von Jens Schnitzler
 
+_[Bilder](https://drive.google.com/drive/folders/0B8AFNfD3N_NVajFaRlVvMzNhNEU?usp=sharing)_
+_Script: 170623_ssm_plakat-generator_js.jsx_
+
 Das Projekt umfasst zwei Hefte und eine generierte Plakatserie.
 Die Hefte befassen sich mit der Geschichte und der Bedeutung von programmatischer Gestaltung in Kunst und Design – von Armin Hofmann über die frühe Computerkunst bis heute – und deren praktischen Nutzen für den Gestaltungsprozess – vom Konzept über den Entwurf bis zum Ergebnis. 
 
