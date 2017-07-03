@@ -1,0 +1,7 @@
+RADIOVISION
+
+RADIOVISION zeigt, wie Sprache die Typografie eines Textes gestaltet – abhängig davon, wie ein Computer Sprache wahrnimmt und was er inhaltlich versteht. 
+
+Mit Hilfe einer Spracherkennungs-Software verwandeln sich zwölf Radiosendungen zu Texten. Die Radiostimmen wurden gleichzeitig aufgezeichnet und auf Datenbasis ausgewertet.
+
+Diese Analyse wird mit neuen Regeln interpretiert und auf die typografische Erscheinung der Texte übertragen. Das Ergebnis: zwölf typografische Stimm-Bilder, die nur durch ihren Sprecher entstehen konnten.
