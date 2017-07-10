@@ -1,0 +1,3 @@
+Dymaxion Chronofile Pia Schröer
+
+Ein halbes Jahrhundert lang dokumentierte Richard Buckminster Fuller alle 15 Minuten seinen Tagesablauf in einem Tagebuch, dem ‚Dymaxion Chronofile‘. Er sammelte Korrespondenzen, Rechnungen und Skizzen. Inspiriert von der Konsequenz und Sorgfalt Fullers begann ein Selbstversuch: Pia dokumentierte einen Monat lang detailliert ihr Leben: Sie sammelte Mails, Fotos, den Whatsapp-Verlauf und notierte ihre Gedanken – oft mit Hilfe der App ‚Reporter‘, die zusätzlich Wetter und Standorte trackte. Aus den gesammelten Daten entwickelte sie eine Ordnerstruktur und ein Skript, das ihr Tagebuch komplett automatisch in InDesign generierte.
