@@ -1,1 +1,4 @@
 
+Bewegte Buchstaben ist eine interaktive animierte Installation, die auf spielerische Art
+und Weise die Eigenheiten verschiedener Schriften vermittelt. Durch Veränderung des
+Abstraktionsgrades lässt sich beobachten, wie eine Schrift entsteht.
