@@ -12,9 +12,9 @@ Zudem gibt es das [zugehörige Wiki](https://github.com/typografie-haw-hamburg/T
 ## Installation Sublime Text 3
 
 - Sublime Text 3 [herunterladen](https://www.sublimetext.com/3) und in den Programme-Ordner verschieben
-- Datei `Sublime Text 3 Settings.zip` herunterladen und entzippen
+- [Einstellungsdateien herunterladen](https://github.com/typografie-haw-hamburg/Typografie-programmieren/raw/master/Material/ST3_settings.zip) und entzippen
 - Sublime öffnen, dann unter Sublime Text -> Preferences -> Browse Packages aufrufen.
 - Der Ordner der sich öffnet liegt in einem Ordner namens `Sublime Text 3`
-- Diesen Ordner mit dem eben entzippten Ordner `Sublime Text 3` ersetzen
-- Sublime neu starten. An dem neuen, weißen Interface erkennt ihr, ob alles geklappt hat
-- In Sublime unter Tools -> InDesign Tools -> Select InDesign Version die richtige Version auswählen. Falls eure Version dort nicht aufgeführt ist, wählt InDesign CC2014.
+- Diesen `Sublime Text 3`-Ordner mit dem eben entzippten Ordner `Sublime Text 3` ersetzen
+- Sublime neu starten. Wenn ihr jetzt ein weißes Interface seht, hat alles geklappt
+- In Sublime unter Tools -> InDesign Tools -> Select InDesign Version die richtige Version auswählen. Falls eure Version dort nicht aufgeführt ist, wählt InDesign CC2015.
