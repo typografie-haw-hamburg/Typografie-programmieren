@@ -4,9 +4,10 @@ Zudem gibt es das [zugehörige Wiki](https://github.com/typografie-haw-hamburg/T
 
 ## Installation basil.js
 
-- <a href="https://github.com/basiljs/basil.js/raw/develop/basil.js" download="basil.js">basil.js herunterladen</a>
+- [basil.js herunterladen](https://github.com/basiljs/basil.js/raw/develop/basil.js) (`Rechtsklick > Ziel speichern unter …`)
 - Im Ordner `Dokumente` einen Unterordner namens `basiljs` anlegen
 - die heruntergeladene `basil.js`-Datei in diesen Unterordner ziehen
+- [Beispielscripts herunterladen](https://github.com/typografie-haw-hamburg/Typografie-programmieren/raw/master/Material/examples.zip) und den entzippten Ordner ebenfalls in den `basiljs`-Ordner ablegen
 
 ## Installation Sublime Text 3
 
