@@ -4,7 +4,7 @@ Zudem gibt es das [zugehörige Wiki](https://github.com/typografie-haw-hamburg/T
 
 ## Installation basil.js
 
-- [basil.js](https://github.com/basiljs/basil.js/raw/develop/basil.js) herunterladen
+- <a href="https://github.com/basiljs/basil.js/raw/develop/basil.js" download="basil.js">basil.js herunterladen</a>
 - Im Ordner `Dokumente` einen Unterordner namens `basiljs` anlegen
 - die heruntergeladene `basil.js`-Datei in diesen Unterordner ziehen
 
