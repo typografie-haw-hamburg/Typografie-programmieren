@@ -1,6 +1,8 @@
 # Typografie programmieren
 In dieser Repository findet ihr alle Scripts, alle Übungen und die aktuellste Version von basil.js.
-Zudem gibt es das [zugehörige Wiki](https://github.com/typografie-haw-hamburg/Typografie-programmieren/wiki), in dem ihr Infos zum Scripting, zu basil.js-Funktionen usw. findet.
+Im [zugehörigen Wiki](https://github.com/typografie-haw-hamburg/Typografie-programmieren/wiki) findet ihr Infos zum Scripting, zu basil.js-Funktionen usw.
+
+In der [basil.js Reference](https://basiljs.github.io/) könnt ihr alle Befehle nachschlagen.
 
 ## Installation basil.js
 
