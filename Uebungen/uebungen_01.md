@@ -20,14 +20,11 @@ Macht bitte von folgenden Übungen so viele wie möglich. Wenn etwas nicht klapp
 
   * Wenn ihr dem Schneemann Farben geben wollt (weiß, schwarz, orange), könnt ihr das mit dem Befehl `b.fill(255, 0, 0)` tun. In die Klammern kommen natürlich die RGB-Werte der entsprechenden Farbe.
 
-  * Optional: Um drei Punkte zu einem Dreieck zu verbinden (für die Nase), könnt ihr folgende Befehlfolge ausprobieren:
-
-  ```js
+  * Optional: Um drei Punkte zu einem Dreieck zu verbinden (für die Nase), könnt ihr folgende Befehlfolge ausprobieren:```js
   b.beginShape(b.CLOSE);
     b.vertex(10, 10);
     b.vertex(40, 20);
     b.vertex(10, 30);
   b.endShape();
   ```
-
   Passt die Koordinaten so an, dass sie für eure Zwecke funktionieren.
