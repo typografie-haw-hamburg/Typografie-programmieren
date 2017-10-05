@@ -4,20 +4,20 @@
 function draw() {
 
   b.clear( b.doc() );
+  b.units( b.MM );
 
-  b.units(b.MM);
   b.size(200, 200);
 
   b.noFill();
 
-  b.rect(20, 80, 200, 50);
-  b.ellipse(50, 70, 20, 20);
+  b.beginShape(b.CLOSE);
 
-  b.fill(150);
+  b.vertex(50, 50);
+  b.vertex(100, 80);
+  b.vertex(80, 160);
+  b.vertex(120, 190);
 
-  b.rect(0, 0, 30, 40);
-
-  b.line(0, 0, b.width, b.height);
+  b.endShape();
 
 }
 
