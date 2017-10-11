@@ -6,9 +6,8 @@ function draw() {
   b.units(b.MM);
 b.size(400,400)
 
-var Anzahl = (2, 5);
 
-for(var i = 0; i < Anzahl; i++) {
+for(var i = 0; i < 10; i++) {
 var red2 = b.random(200, 255);
 var green2 = b.random(200, 255);
 var blue2 = b.random(200, 255);
