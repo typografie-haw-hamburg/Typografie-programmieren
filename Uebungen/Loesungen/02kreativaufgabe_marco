@@ -1,0 +1,44 @@
+// @includepath "~/Documents/;%USERPROFILE%Documents";
+// @include "basiljs/basil.js";
+
+function draw() {
+
+b.clear(b.doc());
+b.size(800,800);
+
+var c1 = b.color(128,90,33);
+var c2 = b.color(233,10,190);
+
+var c3 = b.color(23,100,244);
+var c4 = b.color(80,87,3);
+
+
+b.gradient(c1,c2,"farbe");
+
+b.gradient(c3,c4,"farbe2");
+
+
+b.noStroke();
+b.fill(b.gradient("farbe"));
+b.rect(0,0,800,800);
+
+for( i = 0; i < 30; i++){
+
+var x = b.random(100,500);
+var y = b.random(100,600)
+
+b.noStroke();
+b.fill(b.gradient("farbe2"));
+b.rect(x,y,60,150);
+b.rect(x,y,10,40);
+
+}
+
+
+
+
+
+
+}
+
+b.go();
