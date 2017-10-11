@@ -1,0 +1,74 @@
+﻿// @includepath "~/Documents/;%USERPROFILE%Documents";
+// @include "basiljs/basil.js";
+
+function draw() {
+b.units(b.MM);
+b.clear(b.doc());
+b.noFill();
+
+var loops = 2;
+var dw = b.width;
+var dh = b.height;
+
+b.fill(0);
+b.rect (0, 0, dw, dh);
+//b.fill ( b.gradient (0, 255, "BlackWhite"));
+
+//colors for gradient
+var white = b.color (255);
+var black = b.color (0);
+
+//gradient
+b.fill(b.gradient(white, black, "BlackWhite"));
+b.rect (0, b.random (dh), b.random (dw/2), dh);
+
+b.fill (b.color (0));
+
+b.stroke (255);
+b.strokeWeight (0.4);
+
+
+b.noFill();
+
+var amountLines = b.random (1,15);
+
+//lines
+b.beginShape(); {
+
+  for (i = 0; i < amountLines; i++) {
+
+    var xVertex = b.random (-10, dw +10);
+    var yVertex = b.random (-10, dh +10);
+
+    b.vertex (xVertex, yVertex);
+  }
+
+}
+
+b.endShape();
+
+b.fill (0);
+
+b.strokeWeight (2);
+
+//rect for typo
+var wRect = b.random (200);
+var hRect = b.random (200);
+
+var xRect = b.random(10, dw -wRect);
+var yRect = b.random(10, dw -hRect);
+
+b.rect (xRect, yRect, hRect, wRect);
+
+b.fill (255);
+b.textFont ("Daubenton");
+b.textSize (70);
+
+b.text ("Gradient", xRect, yRect -35, 500, 30);
+
+
+
+
+}
+
+b.go();
