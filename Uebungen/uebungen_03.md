@@ -4,7 +4,7 @@ Macht bitte folgende Übungen bis zum nächsten Mittwoch. Wenn etwas nicht klapp
 
 1. Schreibt ein Script, das 10 Rechtecke auf einer Seite untereinander zeichnet. Die Rechtecke sollen mit jedem Schritt breiter werden, immer um den gleichen Abstand. Sucht euch eine weitere Eigenschaft aus (Farbe, Kontur, Konturstärke etc.), die sich ebenfalls Schritt für Schritt ändern.
 
-    - Ändert das Script so, dass ab der Hälfte (ab dem 6. Rechteck) keine Rechtecke mehr gezeichnet werden, sondern Kreise. (Tipp: Dazu könnt ihr ein `if`-Statement benutzen.)
+    - Ändert das Script so, dass ab der Hälfte (ab dem 6. Rechteck) keine Rechtecke mehr gezeichnet werden, sondern Kreise. (Tipp: Dazu könnt ihr ein `if()`-Statement benutzen.)
 
 2. Ladet euch [dieses Script](https://github.com/typografie-haw-hamburg/Typografie-programmieren/blob/master/Kurs/03/01_Linien.jsx) aus dem Kurs herunter. Das Script zeichnet eine durchgehende Linie, die sich zufällig über die Seite verteilt. Erweitert das Script so, dass Kreise auf den Eckpunkten der Linie gezeichnet werden.
 
@@ -16,8 +16,8 @@ Macht bitte folgende Übungen bis zum nächsten Mittwoch. Wenn etwas nicht klapp
 
     ![Kreise im Kreis](/Material/Bilder/Uebungen/2017/03/KreiseImKreis.jpg)
 
-    * Tipp: Ihr werdet mit `b.dist()` Abstände messen müssen. Und ihr müsst ein `if`-Statement nutzen, um Kreise nur dann zu zeichnen, wenn sie wirklich innerhalb des großen Kreises liegen.
+    * Tipp: Ihr werdet mit `b.dist()` Abstände messen müssen. Und ihr müsst ein `if()`-Statement nutzen, um Kreise nur dann zu zeichnen, wenn sie wirklich innerhalb des großen Kreises liegen.
 
-5. (**Kreativaufgabe**) Versucht mit eurem Wissen über das bisher gelernte eine interessante Gestaltung bzw. ein interessantes Muster per Script zu erstellen. In eurem Script soll mindestens eine if()-Abfrage vorkommen. Speichert von diesem Design ein JPEG ab (Datei -> Exportieren -> Format JPEG -> Qualität Hoch | Auflösung(ppi): 72).
+5. (**Kreativaufgabe**) Versucht mit eurem Wissen über das bisher gelernte eine interessante Gestaltung bzw. ein interessantes Muster per Script zu erstellen. In eurem Script soll mindestens eine `if()`-Abfrage vorkommen. Speichert von diesem Design ein JPEG ab (Datei -> Exportieren -> Format JPEG -> Qualität Hoch | Auflösung(ppi): 72).
 
     * Benennt die exportierten JPEGs `03_Kreativaufgabe_EuerName.jpg` und ladet sie in [diesen Google Drive-Ordner](https://drive.google.com/drive/folders/0B6USBbEchpCkMDVaWWdJZHBTRDA) hoch. Ladet euer Script bitte mit der Benennung `03_Kreativaufgabe_EuerName.jsx` in [diesen  GitHub-Ordner](https://github.com/typografie-haw-hamburg/Typografie-programmieren/tree/master/Uebungen/Loesungen) hoch (oben auf `Upload files` klicken, Script in das Fenster ziehen, unten mit `Commit changes` abspeichern).
