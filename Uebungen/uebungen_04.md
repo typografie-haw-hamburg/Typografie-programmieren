@@ -6,7 +6,11 @@ Macht bitte folgende Übungen bis zum nächsten Mittwoch. Wenn etwas nicht klapp
 
 2. Versucht ein Script zu schreiben, das euch folgendes visuelles Ergebnis erstellt (siehe Bild).
 
+    ![Kreisschlangen](/Material/Bilder/Uebungen/2017/04/Kreisschlangen.gif)
+
     * Tipp: Eine dieser "Kreisschlangen" erstellt ihr natürlich mit einem `for-Loop`. Um aber mehrere davon zu erstellen, müsst ihr diesen loop in einen weiteren loop packen. Damit dabei die Zählvariablen beider Loops nicht durcheinander kommen, müsst ihr sie unterschiedlich benennen. Eine Variable kann also nach wie vor `i` heißen, die andere könntet ihr beispielsweise `j` nennen.
+
+    * Ändert das Script so, dass die Kreisschlangen in eine zufällige Richtung verlaufen.
 
 3. Schreibt ein Script, das verschiedene Textrahmen untereinander setzt. Der Text in jedem Textrahmen soll sich visuell in mindestens einer Eigenschaft vom vorherigen Textrahmen unterscheiden (z.B. Schrift immer größer, Buchstaben immer breiter etc.).
 
