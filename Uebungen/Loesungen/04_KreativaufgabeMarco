@@ -1,0 +1,100 @@
+// @includepath "~/Documents/;%USERPROFILE%Documents";
+// @include "basiljs/basil.js";
+
+function draw() {
+
+b.clear( b.doc() );
+b.size(600,800);
+
+var c1 = b.color(4,30,8);
+var c2 = b.color(81,82,126);
+
+var c3 = b.color(129,168,233);
+var c4 = b.color(103,72,59);
+
+var c5 = b.color(34,213,187);
+var c6 = b.color(233,89,209);
+
+
+
+b.gradient(c1,c2,"verlauf");
+
+b.gradient(c3,c4,"verlauf2");
+
+b.gradient(c5,c6,"verlauf3");
+
+
+b.noStroke();
+b.fill(b.gradient("verlauf"));
+b.rect(0,0,b.width,b.height);
+
+
+
+var size = 50;
+
+b.textSize( size );
+b.textFont("VCR OSD Mono");
+b.textSize(80);
+b.textLeading(90);
+
+for(var i = 0; i < 110; i++){
+
+var text = b.text("NeoTrash", 120, 40 + i * 6, 400, 700);
+
+b.typo(text, 'fillColor', "verlauf3");
+}
+
+
+
+
+
+
+for(var i = 0; i < 100; i++){
+
+var x = b.random(520,564);
+var y = b.random(36,764)
+
+var x1 = b.random(20,64);
+var y2 = b.random(36,764)
+
+var size = b.random(10,30);
+
+b.noStroke();
+b.fill(b.gradient("verlauf2"));
+b.rect(x,y,size,size);
+b.rect(x1,y2,size,size);
+}
+
+
+
+for(var i = 0; i < 20; i++){
+
+
+var size2 = b.random(20,80);
+var x3 = b.random(50,500);
+var y3 = b.random(50,700);
+
+b.noStroke();
+b.fill(b.gradient("verlauf3"));
+b.rect(x3,y3,size2,size2);
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+b.go();
