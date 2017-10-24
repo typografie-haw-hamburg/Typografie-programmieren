@@ -1,0 +1,78 @@
+//@includepath "~/Documents/;%USERPROFILE%Documents";
+//@include "basiljs/basil.js";
+
+function draw() {
+
+b.clear(b.doc());
+b.units(b.MM);
+
+
+b.fill( 0,0,0);
+  b.rect(0,0,b.width,b.height);
+
+  for(var k = 0; k < 200; k++){
+
+
+
+     b.line(0 +k/2 ,0, 500, 2*k++);
+
+     b.stroke(255, 250 - (k * 1), 0);
+
+      }
+
+  for(var m = 0; m < 200; m++){
+
+
+
+     b.line(20 +m/2 ,150, 500, 2*m++);
+
+     b.stroke(255, 250 - (m * 1), 0);
+
+
+      }
+
+    for(var m = 0; m < 200; m++){
+
+
+
+     b.line(60 +m/2 ,230, 500, 4*m++);
+
+     b.stroke(255, 250 - (m * 1), 0);
+
+
+      }
+
+var txt = ["WAS IST HÄNSEL UND GRETEL EIGENTLICH FÜR 1 MÄRCHEN?"];
+
+  b.fill(255,255,255);
+
+
+  for (var i = 0; i < 15; i++) {
+
+
+        b.textSize(91);
+        b.textFont("vergessen");
+
+
+        b.text(txt , -18+2*i++, -18+2*i++, 190,300);
+
+
+
+
+        if ( i > 10) {
+
+
+          var color1 = b.color(255, 150, 255);
+          var color2 = b.color(0, 255, 255);
+
+          var gradient = b.gradient(color1, color2);
+
+          b.fill( gradient );
+
+
+         }
+  }
+
+}
+
+b.go();
