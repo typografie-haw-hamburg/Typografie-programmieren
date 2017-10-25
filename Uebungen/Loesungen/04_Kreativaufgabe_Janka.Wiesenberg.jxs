@@ -1,0 +1,53 @@
+﻿// @includepath "~/Documents/;%USERPROFILE%Documents";
+// @include "basiljs/basil.js";
+
+function draw() {
+  b.clear(b.doc());
+  b.units(b.MM);
+
+
+    var x = -5;
+    var y = -10;
+
+  b.textFont("Helvetica","Bold");
+  var textFrameWidth = 310;
+  var textFrameHeight =300;
+
+
+    var Wort01= "STIL";
+    var Wort02= "SYSTEM";;
+    var Wort03= "METHODE";
+
+
+
+    for(var i = 0; i < 60; i++) {
+    var red= b.random((244,250),0,0);
+    var green= b.random(0,((244,250)),0);
+    var blue= b.random(0,0,(224,245));
+
+    var opacityRandom1= b.random(50,95);
+    var opacityRandom2= b.random(10,50);
+    var RandomNumber= b.random (0,10);
+    var RandomSkew= b.random(5,10);
+
+    var Textobjekt = b.text(Wort01+Wort03, x, y+i*5, textFrameWidth,textFrameHeight);
+
+        b.textSize(100);
+
+      if (RandomNumber< 4){
+        b.opacity(Textobjekt, opacityRandom2);
+        b.fill(0,0,255);
+        b.typo (Textobjekt,"skew", RandomSkew);
+
+      }else{
+       // b.fill(blue);
+        b.opacity(Textobjekt, opacityRandom1);
+        b.fill(red,green,0);
+       // b.typo (Textobjekt,"skew", RandomSkew);
+      }
+    }
+
+
+}
+
+b.go();
