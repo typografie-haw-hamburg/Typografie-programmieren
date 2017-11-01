@@ -2,45 +2,39 @@
 // @include "basiljs/basil.js";
 
 function draw() {
+b.clear( b.doc() );
+  b.units(b.MM);
 
-b.clear(b.doc());
-  b.units( b.MM );
+var blue = b.color(148, 169, 208);
+var green = b.color(134, 207, 190);
+b.gradientMode(b.LINEAR)
+b.fill (b.gradient (blue,green, "bluegreen"));
+b.rect (0, 0, b.width, b.height)
 
-  b.noStroke();
+  for(var i=0; i<100; i++) {
 
-b.fill(204, 236, 239);
-b.rect(0, 0, b.width, b.height);
+  var x = b.random(b.width);
+  var y = b.random(b.height);
+  var RandomNumber = b.random(10, 20);
 
-  for(var i = 0; i < 200; i++) {
-
-    var x = b.random(0, b.width);
-    var y = b.random(0, b.height);
-    var size = b.random(20, 30);
-
-    var distance = b.dist(x, y, b.width / 2, b.height / 2);
-
-
-    if( distance < 100) {
-
-    var color1 = b.color(191, 213, 232);
-    var color2 = b.color(253, 222, 238);
-    var gradient = b.gradient(color1, color2);
-
-      b.fill(gradient);
+    if (x > b.width/2 && y < b.height/2) {
+      b.fill(117, 137, 191);
+      b.ellipse(x, y, RandomNumber, RandomNumber);
     } else {
+     b.fill(0);
+         b.ellipse(x, y , RandomNumber, RandomNumber);
 
-    var color1 = b.color(251, 182, 209);
-    var color2 = b.color(148, 168, 208);
-    var gradient = b.gradient(color1, color2);
+     }
+    if (x < b.width/2 && y > b.height/2) {
+      b.fill(72, 181, 163);
+    b.ellipse(x, y , RandomNumber, RandomNumber);
 
-      b.fill(gradient);
-    }
 
-    b.rect(x, y, size, size);
-    b.ellipse(x, y, size, size);
+
+   }
+
 
   }
-
 
 }
 
