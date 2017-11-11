@@ -1,0 +1,84 @@
+// @includepath "~/Documents/;%USERPROFILE%Documents";
+// @include "basiljs/basil.js";
+
+b.clear(b.doc() );
+b.units(b.MM);
+
+function draw() {
+
+
+
+
+
+ for (var j = 0; j < 1; j++)
+ {
+
+      //Hintergrundfarbe
+     var colourshintergrund = [ b.color(255,255,255), b.color(0,0,0), b.color(37,33,112), b.color(242,255,1), b.color(251,42,47), b.color(8,131,208),]
+    b.println( colourshintergrund );
+
+      var randomcolorhintergrund = b.floor(b.random(0, colourshintergrund.length));
+      var farbehintergrund = colourshintergrund[randomcolorhintergrund];
+
+ b.fill( farbehintergrund );
+  b.rect(0,0,b.width,b.height);
+
+
+
+
+    for (var i = 0; i < 100; i++)
+    {
+
+        //Sonderzeichen
+        var colours = [ b.color(255,255,255), b.color(0,0,0), b.color(37,33,112), b.color(242,255,1), b.color(251,42,47), b.color(8,131,208),]
+
+        var randomcolor = b.floor(b.random(0, colours.length));
+        var farbe = colours[randomcolor];
+
+
+
+        var letter = [ "////////",",","/", "=","`", "'", "¬", "»","Ξ","Π", "∇", "∴", "≈",  "〉", "→", "↓", "↑" , "←",  "——",  "——",  "——",  "——",  "›", "‹","¨","ɪ","////////",",","/", "=","`", "'", "¬", "»»","Ξ","Π", "∇", "∴", "≈",  "〉", "→", "↓", "↑" , "←",  "——",  "——",  "——",  "——",  "›", "‹","¨","ɪ",
+        "ʬ","˥","ˣ̳͜͡","˒","˓","˺","˹","ֱ֦۞᷁","—","‌⁭⁬⁫₪","╗","╗","╗","╗","╗","╗","╗","╗","╗","║","▒","▒","▒","▒","░","░","░","░","░","░","░","░","░","░","░","░","░","░","░","░","░","░","░","░","▓","▓","▓","▐","█","▲","▼","►","◄"]
+
+        var randomnumber = b.floor(b.random(0, letter.length));
+        var randomletter = letter[randomnumber];
+
+
+
+        var x = b.random(-5,200);
+        var y = b.random(-3,280);
+
+
+
+        if(randomcolorhintergrund = 0){
+          b.fill(0,0,255);
+          b.textSize(25)
+          b.textFont("Arial");
+          b.text(randomletter, x, y, 40, 40);    }
+
+        else {
+
+          b.fill(farbe);
+          b.textSize(25)
+          b.textFont("Arial");
+          b.text(randomletter, x, y, 40, 40); }
+
+
+
+
+
+            //CHAOS
+        b.fill(255);
+        b.textSize(90)
+        b.textFont("spinwerad","Bold");
+        b.text("CHAOS", 57, 230, 200, 200);
+
+
+
+
+    }
+  }
+
+}
+
+b.go();
