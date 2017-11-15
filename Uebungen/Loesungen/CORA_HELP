@@ -1,0 +1,47 @@
+// @includepath "~/Documents/;%USERPROFILE%Documents";
+// @include "basiljs/basil.js";
+
+function draw() {
+
+  b.clear(b.doc() );
+  b.units( b.MM );
+
+b.noFill();
+// Auf Seite 1 Springen
+b.page(1);
+b.pageCount(1);
+
+var pages = 5;
+
+
+for(var j= 0; j < pages; j++) {
+
+
+
+
+
+
+
+
+  for(var i=0; i<20; i++) {
+  var x = b.random (0,b.width);
+  var y = b.random(0,b.height);
+  var size = b.random(0,20);
+  var corner = b.random (0,10);
+
+
+  b.rect(x,y, size, size, corner)
+
+  }
+
+  if(j != pages - 1) {
+    b.println(j);
+    b.addPage();
+  }
+}
+
+
+
+
+}
+b.go();
