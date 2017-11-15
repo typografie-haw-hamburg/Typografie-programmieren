@@ -10,6 +10,8 @@ Macht bitte folgende Übungen bis zum nächsten Mittwoch. Schaut euch zur Hilfe 
 
     * Tipp: Dazu könnt ihr einen Array mit den Namen der drei Dokumente anlegen und dann zufällig einen davon auswürfeln.
 
+    * Lasst dann im nächsten Schritt den Text in einen zweiten Textrahmen fließen (mit `b.linkTextFrames()`).
+
 3. Aufbauend auf dem Script von vorletztem mal, schreibt ein Script, das euch folgendes visuelles Ergebnis erstellt (siehe Bild).
 
     ![Grid](/Material/Bilder/Uebungen/2017/07/grid_new.png)
