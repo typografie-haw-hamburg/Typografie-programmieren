@@ -7,11 +7,14 @@ function draw() {
   b.units( b.MM );
   b.noStroke();
 
+  b.rectMode(b.CENTER);
+
   b.size(200, 200);
 
-  var loops = 20;
+  var loops = 12;
   var step = b.height / loops;
   var colorStep = 255 / loops;
+  var roundingStep = (step - 2) / 2 / (loops - 1);
 
   b.println(colorStep);
 
@@ -22,7 +25,7 @@ function draw() {
     for(var i = 0; i < loops; i++) {
 
       b.fill(i * colorStep, 0, j * colorStep);
-      b.ellipse( step / 2 + j * step, i * step + step / 2, step - 2, step - 2 );
+      b.rect( step / 2 + j * step, i * step + step / 2, step - 2, step - 2, roundingStep * i , roundingStep * j, roundingStep * i, roundingStep * j);
 
     }
 
