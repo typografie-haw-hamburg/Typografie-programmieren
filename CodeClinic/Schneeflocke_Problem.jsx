@@ -55,8 +55,8 @@ b.ellipse(xKreis, yKreis, rKreis*2, rKreis*2);
                     var rsum = rKreis  + rDot;
 
             //var angle steht ganz oben
-            var xDot = xKreis + (rsum * b.cos(angle));
-            var yDot = yKreis + (rsum * b.sin(angle));
+            var xDot = xKreis + (rsum * b.cos(angle * 0.6));
+            var yDot = yKreis + (rsum * b.sin(angle * 0.6));
 
 
             b.fill(255,255,255);
