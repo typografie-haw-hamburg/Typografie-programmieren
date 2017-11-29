@@ -1,0 +1,1 @@
+http://api.openweathermap.org/data/2.5/forecast/daily?q=Basel&units=metric&mode=json&APPID=61f2e9b2e7a07508bdfd51cf91e132d9
