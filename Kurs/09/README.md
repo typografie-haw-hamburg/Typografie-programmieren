@@ -18,8 +18,8 @@
 ### [06_csvColor.jsx](/Kurs/09/06_csvColor.jsx)
 ![06_csvColor.jsx](/Material/Bilder/Kurs/2017/09/06_csvColor.png)
 
-### [07_csvKurve.jsx](/Kurs/09/07_csvKurve.jsx)
-![07_csvKurve.jsx](/Material/Bilder/Kurs/2017/09/07_csvKurve.png)
+### [07_csvCurve.jsx](/Kurs/09/07_csvCurve.jsx)
+![07_csvCurve.jsx](/Material/Bilder/Kurs/2017/09/07_csvCurve.png)
 
 ### [08_api.jsx](/Kurs/09/08_api.jsx)
-![08_api.jsx](/Material/Bilder/Kurs/2017/09/08_api.png)
+![08_api.jsx](/Material/Bilder/Kurs/2017/09/08_api.gif)

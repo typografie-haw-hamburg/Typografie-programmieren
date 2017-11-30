@@ -5,7 +5,7 @@ function draw() {
 
   b.clear(b.doc());
   b.units(b.MM);
-  b.size("A4", b.PORTRAIT);
+  b.size(210, 120);
 
 
   // Nutzereingabe Stadt
