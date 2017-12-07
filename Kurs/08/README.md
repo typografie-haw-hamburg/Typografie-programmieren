@@ -12,7 +12,7 @@
 ### [04_export.jsx](/Kurs/08/04_export.jsx)
 ![04_export.jsx](/Material/Bilder/Kurs/2017/08/04_export.png)
 
-### [05_textBounds.jsx](/Kurs/08/05_textBounds.png)
+### [05_textBounds.jsx](/Kurs/08/05_textBounds.jsx)
 ![05_textBounds.jsx](/Material/Bilder/Kurs/2017/08/05_textBounds.png)
 
 ### [06_textBounds.jsx](/Kurs/08/06_textBounds.jsx)

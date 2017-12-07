@@ -12,7 +12,7 @@
 ### [04_highestNumber.jsx](/Kurs/10/04_highestNumber.jsx)
 ![04_highestNumber.jsx](/Material/Bilder/Kurs/2017/10/04_highestNumber.png)
 
-### [05_longestWord.jsx](/Kurs/10/05_longestWord.png)
+### [05_longestWord.jsx](/Kurs/10/05_longestWord.jsx)
 ![05_longestWord.jsx](/Material/Bilder/Kurs/2017/10/05_longestWord.png)
 
 ### [06_randomImagesWithoutRepetition.jsx](/Kurs/10/06_randomImagesWithoutRepetition.jsx)
