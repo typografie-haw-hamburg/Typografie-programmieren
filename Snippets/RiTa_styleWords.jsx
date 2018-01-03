@@ -1,5 +1,5 @@
 ﻿// @includepath "~/Documents/;%USERPROFILE%Documents";
-// @include "basiljs/bundle/basil.js";
+// @include "basiljs/basil.js";
 // @include "basiljs/lib/polyfills.js";
 // @include "basiljs/lib/rita-full.js";
 
