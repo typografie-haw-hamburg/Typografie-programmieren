@@ -1,7 +1,7 @@
 ﻿// @includepath "~/Documents/;%USERPROFILE%Documents";
 // @include "basiljs/basil.js";
-// @include "basiljs/trych/lib/polyfills.js"
-// @include "basiljs/trych/lib/rita-full.js";
+// @include "basiljs/lib/polyfills.js"
+// @include "basiljs/lib/rita-full.js";
 
 
 function draw() {
