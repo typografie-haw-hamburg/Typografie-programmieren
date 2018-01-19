@@ -63,19 +63,6 @@ function draw() {
   }
 
 
-
-  // dict ist jetzt ein Objekt, bei dem alle Wörter als Eigenschaften angespeichert sind, mit der Häufigkeit als Wert, z.B.
-  //
-  // dict = {
-  //   a: 8,
-  //   about: 3,
-  //   above: 1,
-  //   also: 1,
-  //   and: 9
-  //   ...
-  // };
-
-
   var counter = 0;
 
   // Über alle gesammelten Wörter des Wörterbuchs loopen und beispielsweise in Textrahmen ausgeben
@@ -104,26 +91,6 @@ function draw() {
 
 
 
-
-  //for(var i = 0; i < allCharacters.length; i++) {
-
-
-  //  var myLetter = allCharacters[i].contents.toLowerCase();
-
-   // if(dict[myLetter] > 0) {
-     // var myLetterCount = dict[myLetter];
-     // var myLetterBounds = b.bounds(allCharacters[i]);
-
-      //var x = myLetterBounds.left;
-     // var y = myLetterBounds.baseline;
-
-
-
-     // var size = b.map( dict[myLetter], 0, dict["o"], 0, 20 );
-
-     // b.rect(i*7, 10, 5, size);
-
-    //}}
 }
 
 b.go();
