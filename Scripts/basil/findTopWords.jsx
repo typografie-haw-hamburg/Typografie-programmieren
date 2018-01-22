@@ -52,6 +52,15 @@ function draw() {
   // };
 
 
+  // häufige Wörter aus dem dictionary entfernen
+  var commonWords = ["the", "a", "I", "to", "it", "and", "is", "in"];
+
+  for (var i = 0; i < commonWords.length; i++) {
+    var commonWord = commonWords[i];
+    delete dict[commonWord];
+  }
+
+
   var allWords = [];
 
   // Über alle gesammelten Wörter des Wörterbuchs loopen und beispielsweise in Textrahmen ausgeben
