@@ -6,7 +6,7 @@ In der [basil.js Reference](https://basiljs.github.io/) könnt ihr alle Befehle 
 
 ## Installation basil.js
 
-- [basil.js](https://github.com/basiljs/basil.js/raw/develop/basil.js) herunterladen (`Rechtsklick > Ziel speichern unter …`)
+- [basil.js](https://github.com/basiljs/basil.js/raw/develop-v1/basil.js) herunterladen (`Rechtsklick > Ziel speichern unter …`)
 - Im Ordner `Dokumente` einen Unterordner namens `basiljs` anlegen
 - die heruntergeladene `basil.js`-Datei in diesen Unterordner ziehen
 - [Beispielscripts](https://github.com/typografie-haw-hamburg/Typografie-programmieren/raw/master/Material/examples.zip) herunterladen und den entzippten Ordner ebenfalls in den `basiljs`-Ordner ablegen
