@@ -2,11 +2,11 @@
 In dieser Repository findet ihr alle Scripts, alle Übungen und die aktuellste Version von basil.js.
 Im [zugehörigen Wiki](https://github.com/typografie-haw-hamburg/Typografie-programmieren/wiki) findet ihr Infos zum Scripting, zu basil.js-Funktionen usw.
 
-In der [basil.js Reference](https://basiljs.github.io/) könnt ihr alle Befehle nachschlagen.
+In der [basil.js Reference](https://basiljs2.netlify.com/reference/) (zur Zeit noch in Arbeit) könnt ihr alle Befehle nachschlagen.
 
 ## Installation basil.js
 
-- [basil.js](https://github.com/basiljs/basil.js/raw/develop-v1/basil.js) herunterladen (`Rechtsklick > Ziel speichern unter …`)
+- [basil.js](https://raw.githubusercontent.com/basiljs/basil.js/develop/basil.js) herunterladen (`Rechtsklick > Ziel speichern unter …`)
 - Im Ordner `Dokumente` einen Unterordner namens `basiljs` anlegen
 - die heruntergeladene `basil.js`-Datei in diesen Unterordner ziehen
 - [Beispielscripts](https://github.com/typografie-haw-hamburg/Typografie-programmieren/raw/master/Material/examples.zip) herunterladen und den entzippten Ordner ebenfalls in den `basiljs`-Ordner ablegen
