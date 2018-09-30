@@ -8,7 +8,7 @@ Macht bitte von folgenden Übungen so viele wie möglich. Wenn etwas nicht klapp
 
 * Schreibt ein Script, das das «Haus vom Nikolaus» zeichnet:
 
-  ![Das Haus vom Nikolaus](http://www.stupidedia.org/images/thumb/c/cc/Haus_vom_Nikolaus.png/180px-Haus_vom_Nikolaus.png?filetimestamp=20090325141521)
+  ![Das Haus vom Nikolaus](http://images.gutefrage.net/media/fragen/bilder/alle-24-arten-das-ist-das-haus-vom-nikolaus/0_big.jpg)
 
   * Tipp: Sucht euch dazu eine Koordinate aus, auf der eine Ecke des Hauses liegt (z.B. die Ecke links unten). Die Koordinaten dieser Ecke speichert ihr zunächst in den Variablen `x` und `y`. Jetzt könnt ihr die anderen Elemente relativ zu diesem Mittelpunkt platzieren.
 
