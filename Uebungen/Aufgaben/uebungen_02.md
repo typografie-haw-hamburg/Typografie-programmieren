@@ -1,4 +1,4 @@
-#Übungen #2
+# Übungen #2
 
 Macht bitte folgende Übungen bis zum nächsten Mittwoch. Wenn etwas nicht klappt, versucht zunächst selbst herauszufinden, woran es liegen könnte. Alternativ könnt ihr euch untereinander helfen, zum Beispiel auch in der [Facebook-Gruppe «Typografie Programmieren»](https://www.facebook.com/groups/1760227230910812/), die im vorherigen Kurs für diesen Zweck eingerichtet wurde.
 
