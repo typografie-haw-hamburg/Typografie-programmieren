@@ -10,4 +10,4 @@ Macht bitte folgende Übungen bis zum nächsten Mittwoch. Wenn etwas nicht klapp
 
   - ändert das Script dann so ab, dass ihr Kreise oder andere Formen an die Eckpunkte zeichnet
 
-* Versucht mit eurem Wissen über Schleifen, die Zufallsfunktion und die bisher kennengelernten basil.js-Befehle eine interessante Gestaltung bzw. ein interessantes Muster zu erstellen, das mit jedem Ausführen des (unveränderten) Scripts neu aussieht. Speichert von diesem Design drei Varianten als PDF ab (d.h. ihr führt das Script mindestens drei mal aus und speichert drei Varianten ab, die euch gefallen) und bringt diese am kommenden Mittwoch mit.
+* Versucht mit eurem Wissen über Schleifen, die Zufallsfunktion und die bisher kennengelernten basil.js-Befehle eine interessante Gestaltung bzw. ein interessantes Muster zu erstellen, das mit jedem Ausführen des (unveränderten) Scripts neu aussieht. **Speichert von diesem Design drei Varianten als PDF ab (d.h. ihr führt das Script mindestens drei mal aus und speichert drei Varianten ab, die euch gefallen) und bringt diese am kommenden Mittwoch mit.**
