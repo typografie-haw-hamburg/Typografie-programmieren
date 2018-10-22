@@ -6,7 +6,7 @@ Macht bitte folgende Übungen bis Mittwoch. Wenn etwas nicht klappt, versucht zu
 
     - Ändert das Script so, dass ab der Hälfte (ab dem 6. Rechteck) keine Rechtecke mehr gezeichnet werden, sondern Kreise. (Tipp: Dazu könnt ihr ein `if()`-Statement benutzen.)
 
-2. Ladet euch [dieses Script](https://github.com/typografie-haw-hamburg/Typografie-programmieren/blob/master/Kurs/03/01_Linie.jsx) aus dem Kurs herunter. Das Script zeichnet eine durchgehende Linie, die sich zufällig über die Seite verteilt. Erweitert das Script so, dass Kreise auf den Eckpunkten der Linie gezeichnet werden.
+2. Ladet euch [dieses Script](https://github.com/typografie-haw-hamburg/Typografie-programmieren/blob/master/Kurs/03/01_Zufallslinie.jsx) aus dem Kurs herunter. Das Script zeichnet eine durchgehende Linie, die sich zufällig über die Seite verteilt. Erweitert das Script so, dass Kreise auf den Eckpunkten der Linie gezeichnet werden.
 
     * Ändert das Script im zweiten Schritt so, dass auf den Eckpunkten nach Zufall entweder Kreise oder Quadrate gezeichnet werden.
 
