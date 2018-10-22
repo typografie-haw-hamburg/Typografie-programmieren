@@ -1,6 +1,6 @@
 # Übungen #3
 
-Macht bitte folgende Übungen bis zum nächsten Mittwoch. Wenn etwas nicht klappt, versucht zunächst selbst herauszufinden, woran es liegen könnte. Alternativ könnt ihr euch untereinander helfen, zum Beispiel auch in der [Facebook-Gruppe «Typografie Programmieren»](https://www.facebook.com/groups/1760227230910812/), die im vorherigen Kurs für diesen Zweck eingerichtet wurde.
+Macht bitte folgende Übungen bis Mittwoch. Wenn etwas nicht klappt, versucht zunächst selbst herauszufinden, woran es liegen könnte. Alternativ könnt ihr euch untereinander helfen, zum Beispiel auch in der [Facebook-Gruppe «Typografie Programmieren»](https://www.facebook.com/groups/1760227230910812/).
 
 1. Schreibt ein Script, das 10 Rechtecke auf einer Seite untereinander zeichnet. Die Rechtecke sollen mit jedem Schritt breiter werden, immer um den gleichen Abstand. Sucht euch eine weitere Eigenschaft aus (Farbe, Kontur, Konturstärke etc.), die sich ebenfalls Schritt für Schritt ändern.
 
