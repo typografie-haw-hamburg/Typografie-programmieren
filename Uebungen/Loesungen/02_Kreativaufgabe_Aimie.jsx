@@ -5,151 +5,817 @@ function draw() {
 
 clear(doc())
 
+//-------------------------------------------
+// ABSCHNITT 1
+//-------------------------------------------
 
-// grosse Kreise - mittig
+// sehr grosse Kreise - unten
 // eigentlich: ( var i = 0; i < 100; i++) {
-for ( var i = 0; i < 1; i++) {
+noStroke();
+for ( var i = 0; i < 100; i++) {
 var r=random(255);
 var g=random(255);
 var b=random(255);
 fill(r,g,b);
-
-noStroke();
-var h = random(width/2-50,width/2+50);
-var x = random(height/2-40,height/2+40);
-
-var kreise = ellipse(h,x,10,10);
+var h = random(-10,width+10);
+var x = random(height-60,height-20);
+var kreise = ellipse(h,x,20,20);
 var h = random(20,60);
 opacity(kreise,h);
+}
 
-}
-// Kreisse mittig mittel
-// eigentlich: ( var i = 0; i < 100; i++) {
-for ( var i = 0; i < 1; i++) {
+
+noStroke();
+for ( var i = 0; i < 120; i++) {
 var r=random(255);
 var g=random(255);
 var b=random(255);
 fill(r,g,b);
-noStroke();
 var h = random(0+2.5,width-2.5);
-var x = random(height/2-10,height/2+10);
-var kreise = ellipse(h,x,5,5);
-var r = random(10,30);
-opacity(kreise,r);
-}
-//Kreise mittig kleiner 1
-//eigentlich: ( var i = 0; i < 100; i++) {
-for ( var i = 0; i < 1; i++) {
-var r=random(255);
-var g=random(255);
-var b=random(255);
-fill(r,g,b);
-noStroke();
-var h = random(0+2.5,width-2.5);
-var x = random(height/2,height/2+30);
-var kreise = ellipse(h,x,3,3);
-var r = random(30,50);
-opacity(kreise,r);
-}
-//Kreise mittig kleiner 1
-// eigentlich: ( var i = 0; i < 100; i++)
-for ( var i = 0; i < 1; i++) {
-var r=random(255);
-var g=random(255);
-var b=random(255);
-fill(r,g,b);
-noStroke();
-var h = random(0+2.5,width-2.5);
-var x = random(height/2,height/2+30);
+var x = random(height/2+60,height-20);
 var kreise = ellipse(h,x,2,2);
 var r = random(50,70);
 opacity(kreise,r);
 }
-//Kreis Rechteck 1
-var j = width/2;
-var k = height/2;
 
-var kreis1_1 = ellipse(j,k-50,4,4);
-var kreis1_2 = ellipse(j,k+130,4,4);
-var kreis2_1 = ellipse(j-30,k-20,4,4);
-var kreis2_2 = ellipse(j+30,k-20,4,4);
-var kreis3_1 = ellipse(j-60,k+10,4,4);
-var kreis3_2 = ellipse(j+60,k+10,4,4);
-var kreis4_1 = ellipse(j-90,k+40,4,4);
-var kreis4_2 = ellipse(j+90,k+40,4,4);
-var kreis5_1 = ellipse(j-60,k+70,4,4);
-var kreis5_2 = ellipse(j+60,k+70,4,4);
-var kreis6_1 = ellipse(j-30,k+100,4,4);
-var kreis6_2 = ellipse(j+30,k+100,4,4);
+//-------------------------------------------
+//ABSCHNITT 2
+//-------------------------------------------
 
+// KREIS REIHE - MITTIG
 var r=random(255);
 var g=random(255);
 var b=random(255);
 fill(r,g,b);
-//1.Kreis
-var kreis1_1 = ellipse(j,k-46,4,4);
-var kreis1_2 = ellipse(j,k+126,4,4);
-//2.Kreis
-var kreis2_1 = ellipse(j-26,k-16,4,4);
-var kreis2_2 = ellipse(j+26,k-16,4,4);
-//3.Kreis
-var kreis3_1 = ellipse(j-56,k+14,4,4);
-var kreis3_2 = ellipse(j+56,k+14,4,4);
-//4.Kreis
-var kreis4_1 = ellipse(j-86,k+40,4,4);
-var kreis4_2 = ellipse(j+86,k+40,4,4);
-//5.Kreis
-var kreis5_1 = ellipse(j-56,k+66,4,4);
-var kreis5_2 = ellipse(j+56,k+66,4,4);
-//6.Kreis
-var kreis6_1 = ellipse(j-26,k+96,4,4);
-var kreis6_2 = ellipse(j+26,k+96,4,4);
+//Kreisgröße
+var r=2;
+// x-höhe,y-höhe
+var x=width/2;
+var y=random(height/2+50,height/2+100);
+//Abstandsschritte
+var q=8;
+//Punkte nach links
+ellipse(x-q,y+48/2,r,r);
+ellipse(x-2*q,y+48/2,r,r);
+ellipse(x-3*q,y+48/2,r,r);
+ellipse(x-4*q,y+48/2,r,r);
+ellipse(x-5*q,y+48/2,r,r);
+ellipse(x-6*q,y+48/2,r,r);
+ellipse(x-7*q,y+48/2,r,r);
+ellipse(x-8*q,y+48/2,r,r);
+ellipse(x-9*q,y+48/2,r,r);
+ellipse(x-10*q,y+48/2,r,r);
+ellipse(x-11*q,y+48/2,r,r);
+ellipse(x-12*q,y+48/2,r,r);
+ellipse(x-13*q,y+48/2,r,r);
+//Punkt in der Mitte
+ellipse(x,y+48/2,r,r);
+//Punkte nach rechts
+ellipse(x+q,y+48/2,r,r);
+ellipse(x+2*q,y+48/2,r,r);
+ellipse(x+3*q,y+48/2,r,r);
+ellipse(x+4*q,y+48/2,r,r);
+ellipse(x+5*q,y+48/2,r,r);
+ellipse(x+6*q,y+48/2,r,r);
+ellipse(x+7*q,y+48/2,r,r);
+ellipse(x+8*q,y+48/2,r,r);
+ellipse(x+9*q,y+48/2,r,r);
+ellipse(x+10*q,y+48/2,r,r);
+ellipse(x+11*q,y+48/2,r,r);
+ellipse(x+12*q,y+48/2,r,r);
+ellipse(x+13*q,y+48/2,r,r);
 
+// KREIS REIHE - UNTERER BEREICH
 var r=random(255);
 var g=random(255);
 var b=random(255);
 fill(r,g,b);
-//1.Kreis
-var kreis1_1 = ellipse(j,k-42,4,4);
-var kreis1_2 = ellipse(j,k+122,4,4);
-//2.Kreis
-var kreis2_1 = ellipse(j-22,k-12,4,4);
-var kreis2_2 = ellipse(j+22,k-12,4,4);
-//3.Kreis
-var kreis3_1 = ellipse(j-52,k+18,4,4);
-var kreis3_2 = ellipse(j+52,k+18,4,4);
-//4.Kreis
-var kreis4_1 = ellipse(j-82,k+40,4,4);
-var kreis4_2 = ellipse(j+82,k+40,4,4);
-//5.Kreis
-var kreis5_1 = ellipse(j-52,k+62,4,4);
-var kreis5_2 = ellipse(j+52,k+62,4,4);
-//6.Kreis
-var kreis6_1 = ellipse(j-22,k+92,4,4);
-var kreis6_2 = ellipse(j+22,k+92,4,4);
+//Kreisgröße
+var r=1;
+// x-höhe,y-höhe
+var x=width/2;
+var y=random(height/2+50,height/2+100);
+//Abstandsschritte
+var q=6;
+//Punkte nach links
+ellipse(x-q,y+48/2,r,r);
+ellipse(x-2*q,y+48/2,r,r);
+ellipse(x-3*q,y+48/2,r,r);
+ellipse(x-4*q,y+48/2,r,r);
+ellipse(x-5*q,y+48/2,r,r);
+ellipse(x-6*q,y+48/2,r,r);
+ellipse(x-7*q,y+48/2,r,r);
+ellipse(x-8*q,y+48/2,r,r);
+ellipse(x-9*q,y+48/2,r,r);
+ellipse(x-10*q,y+48/2,r,r);
+ellipse(x-11*q,y+48/2,r,r);
+ellipse(x-12*q,y+48/2,r,r);
+ellipse(x-13*q,y+48/2,r,r);
+ellipse(x-14*q,y+48/2,r,r);
+ellipse(x-15*q,y+48/2,r,r);
+ellipse(x-16*q,y+48/2,r,r);
+ellipse(x-17*q,y+48/2,r,r);
+ellipse(x-18*q,y+48/2,r,r);
+//Punkt in der Mitte
+ellipse(x,y+48/2,r,r);
+//Punkte nach rechts
+ellipse(x+q,y+48/2,r,r);
+ellipse(x+2*q,y+48/2,r,r);
+ellipse(x+3*q,y+48/2,r,r);
+ellipse(x+4*q,y+48/2,r,r);
+ellipse(x+5*q,y+48/2,r,r);
+ellipse(x+6*q,y+48/2,r,r);
+ellipse(x+7*q,y+48/2,r,r);
+ellipse(x+8*q,y+48/2,r,r);
+ellipse(x+9*q,y+48/2,r,r);
+ellipse(x+10*q,y+48/2,r,r);
+ellipse(x+11*q,y+48/2,r,r);
+ellipse(x+12*q,y+48/2,r,r);
+ellipse(x+13*q,y+48/2,r,r);
+ellipse(x+14*q,y+48/2,r,r);
+ellipse(x+15*q,y+48/2,r,r);
+ellipse(x+16*q,y+48/2,r,r);
+ellipse(x+17*q,y+48/2,r,r);
+ellipse(x+18*q,y+48/2,r,r);
+
+// KREIS REIHE - UNTERER BEREICH
 var r=random(255);
 var g=random(255);
 var b=random(255);
 fill(r,g,b);
-//1.Kreis
-var kreis1_1 = ellipse(j,k-38,4,4);
-var kreis1_2 = ellipse(j,k+118,4,4);
-//2.Kreis
-var kreis2_1 = ellipse(j-18,k-8,4,4);
-var kreis2_2 = ellipse(j+18,k-8,4,4);
-//3.Kreis
-var kreis3_1 = ellipse(j-48,k+22,4,4);
-var kreis3_2 = ellipse(j+48,k+22,4,4);
-//4.Kreis
-var kreis4_1 = ellipse(j-78,k+40,4,4);
-var kreis4_2 = ellipse(j+78,k+40,4,4);
-//5.Kreis
-var kreis5_1 = ellipse(j-48,k+58,4,4);
-var kreis5_2 = ellipse(j+48,k+58,4,4);
-//6.Kreis
-var kreis6_1 = ellipse(j-18,k+88,4,4);
-var kreis6_2 = ellipse(j+18,k+88,4,4);
+//Kreisgröße
+var r=5;
+// x-höhe,y-höhe
+var x=width/2;
+var y=random(height/2+50,height/2+100);
+//Abstandsschritte
+var q=7;
+//Punkte nach links
+ellipse(x-q,y+48/2,r,r);
+ellipse(x-2*q,y+48/2,r,r);
+ellipse(x-3*q,y+48/2,r,r);
+ellipse(x-4*q,y+48/2,r,r);
+ellipse(x-5*q,y+48/2,r,r);
+ellipse(x-6*q,y+48/2,r,r);
+ellipse(x-7*q,y+48/2,r,r);
+ellipse(x-8*q,y+48/2,r,r);
+ellipse(x-9*q,y+48/2,r,r);
+ellipse(x-10*q,y+48/2,r,r);
+ellipse(x-11*q,y+48/2,r,r);
+ellipse(x-12*q,y+48/2,r,r);
+ellipse(x-13*q,y+48/2,r,r);
+ellipse(x-14*q,y+48/2,r,r);
+ellipse(x-15*q,y+48/2,r,r);
+ellipse(x-16*q,y+48/2,r,r);
+ellipse(x-17*q,y+48/2,r,r);
+ellipse(x-18*q,y+48/2,r,r);
+ellipse(x-19*q,y+48/2,r,r);
+ellipse(x-20*q,y+48/2,r,r);
+//Punkt in der Mitte
+ellipse(x,y+48/2,r,r);
+//Punkte nach rechts
+ellipse(x+q,y+48/2,r,r);
+ellipse(x+2*q,y+48/2,r,r);
+ellipse(x+3*q,y+48/2,r,r);
+ellipse(x+4*q,y+48/2,r,r);
+ellipse(x+5*q,y+48/2,r,r);
+ellipse(x+6*q,y+48/2,r,r);
+ellipse(x+7*q,y+48/2,r,r);
+ellipse(x+8*q,y+48/2,r,r);
+ellipse(x+9*q,y+48/2,r,r);
+ellipse(x+10*q,y+48/2,r,r);
+ellipse(x+11*q,y+48/2,r,r);
+ellipse(x+12*q,y+48/2,r,r);
+ellipse(x+13*q,y+48/2,r,r);
+ellipse(x+14*q,y+48/2,r,r);
+ellipse(x+15*q,y+48/2,r,r);
+ellipse(x+16*q,y+48/2,r,r);
+ellipse(x+17*q,y+48/2,r,r);
+ellipse(x+18*q,y+48/2,r,r);
+ellipse(x+19*q,y+48/2,r,r);
+ellipse(x+20*q,y+48/2,r,r);
 
 
+// KREIS REIHE - UNTERER BEREICH
+var r=random(255);
+var g=random(255);
+var b=random(255);
+fill(r,g,b);
+//Kreisgröße
+var r=2;
+// x-höhe,y-höhe
+var x=width/2;
+var y=random(height/2+50,height/2+100);
+//Abstandsschritte
+var q=3;
+//Punkte nach links
+ellipse(x-q,y+48/2,r,r);
+ellipse(x-2*q,y+48/2,r,r);
+ellipse(x-3*q,y+48/2,r,r);
+ellipse(x-4*q,y+48/2,r,r);
+ellipse(x-5*q,y+48/2,r,r);
+ellipse(x-6*q,y+48/2,r,r);
+ellipse(x-7*q,y+48/2,r,r);
+ellipse(x-8*q,y+48/2,r,r);
+ellipse(x-9*q,y+48/2,r,r);
+ellipse(x-10*q,y+48/2,r,r);
+ellipse(x-11*q,y+48/2,r,r);
+ellipse(x-12*q,y+48/2,r,r);
+ellipse(x-13*q,y+48/2,r,r);
+ellipse(x-14*q,y+48/2,r,r);
+ellipse(x-15*q,y+48/2,r,r);
+ellipse(x-16*q,y+48/2,r,r);
+ellipse(x-17*q,y+48/2,r,r);
+ellipse(x-18*q,y+48/2,r,r);
+ellipse(x-19*q,y+48/2,r,r);
+ellipse(x-20*q,y+48/2,r,r);
+ellipse(x-21*q,y+48/2,r,r);
+ellipse(x-22*q,y+48/2,r,r);
+ellipse(x-23*q,y+48/2,r,r);
+ellipse(x-24*q,y+48/2,r,r);
+ellipse(x-25*q,y+48/2,r,r);
+ellipse(x-26*q,y+48/2,r,r);
+ellipse(x-27*q,y+48/2,r,r);
+ellipse(x-28*q,y+48/2,r,r);
+ellipse(x-29*q,y+48/2,r,r);
+ellipse(x-30*q,y+48/2,r,r);
+ellipse(x-31*q,y+48/2,r,r);
+ellipse(x-32*q,y+48/2,r,r);
+ellipse(x-33*q,y+48/2,r,r);
+ellipse(x-34*q,y+48/2,r,r);
+ellipse(x-35*q,y+48/2,r,r);
+ellipse(x-36*q,y+48/2,r,r);
+//Punkt in der Mitte
+ellipse(x,y+48/2,r,r);
+//Punkte nach rechts
+ellipse(x+q,y+48/2,r,r);
+ellipse(x+2*q,y+48/2,r,r);
+ellipse(x+3*q,y+48/2,r,r);
+ellipse(x+4*q,y+48/2,r,r);
+ellipse(x+5*q,y+48/2,r,r);
+ellipse(x+6*q,y+48/2,r,r);
+ellipse(x+7*q,y+48/2,r,r);
+ellipse(x+8*q,y+48/2,r,r);
+ellipse(x+9*q,y+48/2,r,r);
+ellipse(x+10*q,y+48/2,r,r);
+ellipse(x+11*q,y+48/2,r,r);
+ellipse(x+12*q,y+48/2,r,r);
+ellipse(x+13*q,y+48/2,r,r);
+ellipse(x+14*q,y+48/2,r,r);
+ellipse(x+15*q,y+48/2,r,r);
+ellipse(x+16*q,y+48/2,r,r);
+ellipse(x+17*q,y+48/2,r,r);
+ellipse(x+18*q,y+48/2,r,r);
+ellipse(x+19*q,y+48/2,r,r);
+ellipse(x+20*q,y+48/2,r,r);
+ellipse(x+21*q,y+48/2,r,r);
+ellipse(x+22*q,y+48/2,r,r);
+ellipse(x+23*q,y+48/2,r,r);
+ellipse(x+24*q,y+48/2,r,r);
+ellipse(x+25*q,y+48/2,r,r);
+ellipse(x+26*q,y+48/2,r,r);
+ellipse(x+27*q,y+48/2,r,r);
+ellipse(x+28*q,y+48/2,r,r);
+ellipse(x+29*q,y+48/2,r,r);
+ellipse(x+30*q,y+48/2,r,r);
+ellipse(x+31*q,y+48/2,r,r);
+ellipse(x+32*q,y+48/2,r,r);
+ellipse(x+33*q,y+48/2,r,r);
+ellipse(x+34*q,y+48/2,r,r);
+ellipse(x+35*q,y+48/2,r,r);
+ellipse(x+36*q,y+48/2,r,r);
 
+//-------------------------------------------
+//ABSCHNITT 3
+//-------------------------------------------
+
+// KREIS REIHE - UNTERER BEREICH
+var r=random(200);
+var g=random(200);
+var b=random(200);
+fill(r,g,b);
+//Kreisgröße
+var r=2;
+// x-höhe,y-höhe
+var x=width/2;
+var y=random(height/2+50,height/2+100);
+//Abstandsschritte
+var q=8;
+//Punkte nach links
+ellipse(x-q,y+48/2,r,r);
+ellipse(x-2*q,y+48/2,r,r);
+ellipse(x-3*q,y+48/2,r,r);
+ellipse(x-4*q,y+48/2,r,r);
+ellipse(x-5*q,y+48/2,r,r);
+ellipse(x-6*q,y+48/2,r,r);
+ellipse(x-7*q,y+48/2,r,r);
+ellipse(x-8*q,y+48/2,r,r);
+ellipse(x-9*q,y+48/2,r,r);
+ellipse(x-10*q,y+48/2,r,r);
+ellipse(x-11*q,y+48/2,r,r);
+ellipse(x-12*q,y+48/2,r,r);
+ellipse(x-13*q,y+48/2,r,r);
+//Punkt in der Mitte
+ellipse(x,y+48/2,r,r);
+//Punkte nach rechts
+ellipse(x+q,y+48/2,r,r);
+ellipse(x+2*q,y+48/2,r,r);
+ellipse(x+3*q,y+48/2,r,r);
+ellipse(x+4*q,y+48/2,r,r);
+ellipse(x+5*q,y+48/2,r,r);
+ellipse(x+6*q,y+48/2,r,r);
+ellipse(x+7*q,y+48/2,r,r);
+ellipse(x+8*q,y+48/2,r,r);
+ellipse(x+9*q,y+48/2,r,r);
+ellipse(x+10*q,y+48/2,r,r);
+ellipse(x+11*q,y+48/2,r,r);
+ellipse(x+12*q,y+48/2,r,r);
+ellipse(x+13*q,y+48/2,r,r);
+
+// KREIS REIHE - UNTERER BEREICH
+var r=random(255);
+var g=random(255);
+var b=random(255);
+fill(r,g,b);
+//Kreisgröße
+var r=2;
+// x-höhe,y-höhe
+var x=width/2;
+var y=random(height/2+50,height/2+100);
+//Abstandsschritte
+var q=6;
+//Punkte nach links
+ellipse(x-q,y+48/2,r,r);
+ellipse(x-2*q,y+48/2,r,r);
+ellipse(x-3*q,y+48/2,r,r);
+ellipse(x-4*q,y+48/2,r,r);
+ellipse(x-5*q,y+48/2,r,r);
+ellipse(x-6*q,y+48/2,r,r);
+ellipse(x-7*q,y+48/2,r,r);
+ellipse(x-8*q,y+48/2,r,r);
+ellipse(x-9*q,y+48/2,r,r);
+ellipse(x-10*q,y+48/2,r,r);
+ellipse(x-11*q,y+48/2,r,r);
+ellipse(x-12*q,y+48/2,r,r);
+ellipse(x-13*q,y+48/2,r,r);
+ellipse(x-14*q,y+48/2,r,r);
+ellipse(x-15*q,y+48/2,r,r);
+ellipse(x-16*q,y+48/2,r,r);
+ellipse(x-17*q,y+48/2,r,r);
+ellipse(x-18*q,y+48/2,r,r);
+//Punkt in der Mitte
+ellipse(x,y+48/2,r,r);
+//Punkte nach rechts
+ellipse(x+q,y+48/2,r,r);
+ellipse(x+2*q,y+48/2,r,r);
+ellipse(x+3*q,y+48/2,r,r);
+ellipse(x+4*q,y+48/2,r,r);
+ellipse(x+5*q,y+48/2,r,r);
+ellipse(x+6*q,y+48/2,r,r);
+ellipse(x+7*q,y+48/2,r,r);
+ellipse(x+8*q,y+48/2,r,r);
+ellipse(x+9*q,y+48/2,r,r);
+ellipse(x+10*q,y+48/2,r,r);
+ellipse(x+11*q,y+48/2,r,r);
+ellipse(x+12*q,y+48/2,r,r);
+ellipse(x+13*q,y+48/2,r,r);
+ellipse(x+14*q,y+48/2,r,r);
+ellipse(x+15*q,y+48/2,r,r);
+ellipse(x+16*q,y+48/2,r,r);
+ellipse(x+17*q,y+48/2,r,r);
+ellipse(x+18*q,y+48/2,r,r);
+
+// KREIS REIHE - UNTERER BEREICH
+var r=random(100);
+var g=random(100);
+var b=random(100);
+fill(r,g,b);
+//Kreisgröße
+var r=5;
+// x-höhe,y-höhe
+var x=width/2;
+var y=random(height/2+50,height/2+100);
+//Abstandsschritte
+var q=6;
+//Punkte nach links
+ellipse(x-q,y+48/2,r,r);
+ellipse(x-2*q,y+48/2,r,r);
+ellipse(x-3*q,y+48/2,r,r);
+ellipse(x-4*q,y+48/2,r,r);
+ellipse(x-5*q,y+48/2,r,r);
+ellipse(x-6*q,y+48/2,r,r);
+ellipse(x-7*q,y+48/2,r,r);
+ellipse(x-8*q,y+48/2,r,r);
+ellipse(x-9*q,y+48/2,r,r);
+ellipse(x-10*q,y+48/2,r,r);
+ellipse(x-11*q,y+48/2,r,r);
+ellipse(x-12*q,y+48/2,r,r);
+ellipse(x-13*q,y+48/2,r,r);
+ellipse(x-14*q,y+48/2,r,r);
+ellipse(x-15*q,y+48/2,r,r);
+ellipse(x-16*q,y+48/2,r,r);
+ellipse(x-17*q,y+48/2,r,r);
+ellipse(x-18*q,y+48/2,r,r);
+ellipse(x-19*q,y+48/2,r,r);
+ellipse(x-20*q,y+48/2,r,r);
+//Punkt in der Mitte
+ellipse(x,y+48/2,r,r);
+//Punkte nach rechts
+ellipse(x+q,y+48/2,r,r);
+ellipse(x+2*q,y+48/2,r,r);
+ellipse(x+3*q,y+48/2,r,r);
+ellipse(x+4*q,y+48/2,r,r);
+ellipse(x+5*q,y+48/2,r,r);
+ellipse(x+6*q,y+48/2,r,r);
+ellipse(x+7*q,y+48/2,r,r);
+ellipse(x+8*q,y+48/2,r,r);
+ellipse(x+9*q,y+48/2,r,r);
+ellipse(x+10*q,y+48/2,r,r);
+ellipse(x+11*q,y+48/2,r,r);
+ellipse(x+12*q,y+48/2,r,r);
+ellipse(x+13*q,y+48/2,r,r);
+ellipse(x+14*q,y+48/2,r,r);
+ellipse(x+15*q,y+48/2,r,r);
+ellipse(x+16*q,y+48/2,r,r);
+ellipse(x+17*q,y+48/2,r,r);
+ellipse(x+18*q,y+48/2,r,r);
+ellipse(x+19*q,y+48/2,r,r);
+ellipse(x+20*q,y+48/2,r,r);
+
+
+// KREIS REIHE - UNTERER BEREICH
+var r=random(255);
+var g=random(255);
+var b=random(255);
+fill(r,g,b);
+//Kreisgröße
+var r=2;
+// x-höhe,y-höhe
+var x=width/2;
+var y=random(height/2+50,height/2+100);
+//Abstandsschritte
+var q=3;
+//Punkte nach links
+ellipse(x-q,y+48/2,r,r);
+ellipse(x-2*q,y+48/2,r,r);
+ellipse(x-3*q,y+48/2,r,r);
+ellipse(x-4*q,y+48/2,r,r);
+ellipse(x-5*q,y+48/2,r,r);
+ellipse(x-6*q,y+48/2,r,r);
+ellipse(x-7*q,y+48/2,r,r);
+ellipse(x-8*q,y+48/2,r,r);
+ellipse(x-9*q,y+48/2,r,r);
+ellipse(x-10*q,y+48/2,r,r);
+ellipse(x-11*q,y+48/2,r,r);
+ellipse(x-12*q,y+48/2,r,r);
+ellipse(x-13*q,y+48/2,r,r);
+ellipse(x-14*q,y+48/2,r,r);
+ellipse(x-15*q,y+48/2,r,r);
+ellipse(x-16*q,y+48/2,r,r);
+ellipse(x-17*q,y+48/2,r,r);
+ellipse(x-18*q,y+48/2,r,r);
+ellipse(x-19*q,y+48/2,r,r);
+ellipse(x-20*q,y+48/2,r,r);
+ellipse(x-21*q,y+48/2,r,r);
+ellipse(x-22*q,y+48/2,r,r);
+ellipse(x-23*q,y+48/2,r,r);
+ellipse(x-24*q,y+48/2,r,r);
+ellipse(x-25*q,y+48/2,r,r);
+ellipse(x-26*q,y+48/2,r,r);
+ellipse(x-27*q,y+48/2,r,r);
+ellipse(x-28*q,y+48/2,r,r);
+ellipse(x-29*q,y+48/2,r,r);
+ellipse(x-30*q,y+48/2,r,r);
+ellipse(x-31*q,y+48/2,r,r);
+ellipse(x-32*q,y+48/2,r,r);
+ellipse(x-33*q,y+48/2,r,r);
+ellipse(x-34*q,y+48/2,r,r);
+ellipse(x-35*q,y+48/2,r,r);
+ellipse(x-36*q,y+48/2,r,r);
+//Punkt in der Mitte
+ellipse(x,y+48/2,r,r);
+//Punkte nach rechts
+ellipse(x+q,y+48/2,r,r);
+ellipse(x+2*q,y+48/2,r,r);
+ellipse(x+3*q,y+48/2,r,r);
+ellipse(x+4*q,y+48/2,r,r);
+ellipse(x+5*q,y+48/2,r,r);
+ellipse(x+6*q,y+48/2,r,r);
+ellipse(x+7*q,y+48/2,r,r);
+ellipse(x+8*q,y+48/2,r,r);
+ellipse(x+9*q,y+48/2,r,r);
+ellipse(x+10*q,y+48/2,r,r);
+ellipse(x+11*q,y+48/2,r,r);
+ellipse(x+12*q,y+48/2,r,r);
+ellipse(x+13*q,y+48/2,r,r);
+ellipse(x+14*q,y+48/2,r,r);
+ellipse(x+15*q,y+48/2,r,r);
+ellipse(x+16*q,y+48/2,r,r);
+ellipse(x+17*q,y+48/2,r,r);
+ellipse(x+18*q,y+48/2,r,r);
+ellipse(x+19*q,y+48/2,r,r);
+ellipse(x+20*q,y+48/2,r,r);
+ellipse(x+21*q,y+48/2,r,r);
+ellipse(x+22*q,y+48/2,r,r);
+ellipse(x+23*q,y+48/2,r,r);
+ellipse(x+24*q,y+48/2,r,r);
+ellipse(x+25*q,y+48/2,r,r);
+ellipse(x+26*q,y+48/2,r,r);
+ellipse(x+27*q,y+48/2,r,r);
+ellipse(x+28*q,y+48/2,r,r);
+ellipse(x+29*q,y+48/2,r,r);
+ellipse(x+30*q,y+48/2,r,r);
+ellipse(x+31*q,y+48/2,r,r);
+ellipse(x+32*q,y+48/2,r,r);
+ellipse(x+33*q,y+48/2,r,r);
+ellipse(x+34*q,y+48/2,r,r);
+ellipse(x+35*q,y+48/2,r,r);
+ellipse(x+36*q,y+48/2,r,r);
+
+
+//-------------------------------------------
+// ABSCHNITT 4
+//-------------------------------------------
+
+
+// KREIS REIHE - OBERER BEREICH
+//var r=random(200);
+//var g=random(200);
+//var b=random(200);
+//fill(r,g,b);
+//Kreisgröße
+//var r=2;
+// x-höhe,y-höhe
+//var x=width/2;
+//var y=random(10,40);
+//Abstandsschritte
+//var q=8;
+//Punkte nach links
+//ellipse(x-q,y+48/2,r,r);
+//ellipse(x-2*q,y+48/2,r,r);
+//ellipse(x-3*q,y+48/2,r,r);
+//ellipse(x-4*q,y+48/2,r,r);
+//ellipse(x-5*q,y+48/2,r,r);
+//ellipse(x-6*q,y+48/2,r,r);
+//ellipse(x-7*q,y+48/2,r,r);
+//ellipse(x-8*q,y+48/2,r,r);
+//ellipse(x-9*q,y+48/2,r,r);
+//ellipse(x-10*q,y+48/2,r,r);
+//ellipse(x-11*q,y+48/2,r,r);
+//ellipse(x-12*q,y+48/2,r,r);
+//ellipse(x-13*q,y+48/2,r,r);
+//Punkt in der Mitte
+//ellipse(x,y+48/2,r,r);
+//Punkte nach rechts
+//ellipse(x+q,y+48/2,r,r);
+//ellipse(x+2*q,y+48/2,r,r);
+//ellipse(x+3*q,y+48/2,r,r);
+//ellipse(x+4*q,y+48/2,r,r);
+//ellipse(x+5*q,y+48/2,r,r);
+//ellipse(x+6*q,y+48/2,r,r);
+//ellipse(x+7*q,y+48/2,r,r);
+//ellipse(x+8*q,y+48/2,r,r);
+//ellipse(x+9*q,y+48/2,r,r);
+//ellipse(x+10*q,y+48/2,r,r);
+//ellipse(x+11*q,y+48/2,r,r);
+//ellipse(x+12*q,y+48/2,r,r);
+//ellipse(x+13*q,y+48/2,r,r);
+
+// KREIS REIHE - OBEN
+//var r=random(255);
+//var g=random(255);
+//var b=random(255);
+//fill(r,g,b);
+//Kreisgröße
+//var r=2;
+// x-höhe,y-höhe
+//var x=width/2;
+//var y=random(10,40);
+//Abstandsschritte
+//var q=6;
+//Punkte nach links
+//ellipse(x-q,y+48/2,r,r);
+//ellipse(x-2*q,y+48/2,r,r);
+//ellipse(x-3*q,y+48/2,r,r);
+//ellipse(x-4*q,y+48/2,r,r);
+//ellipse(x-5*q,y+48/2,r,r);
+//ellipse(x-6*q,y+48/2,r,r);
+//ellipse(x-7*q,y+48/2,r,r);
+//ellipse(x-8*q,y+48/2,r,r);
+//ellipse(x-9*q,y+48/2,r,r);
+//ellipse(x-10*q,y+48/2,r,r);
+//ellipse(x-11*q,y+48/2,r,r);
+//ellipse(x-12*q,y+48/2,r,r);
+//ellipse(x-13*q,y+48/2,r,r);
+//ellipse(x-14*q,y+48/2,r,r);
+//ellipse(x-15*q,y+48/2,r,r);
+//ellipse(x-16*q,y+48/2,r,r);
+//ellipse(x-17*q,y+48/2,r,r);
+//ellipse(x-18*q,y+48/2,r,r);
+//Punkt in der Mitte
+//ellipse(x,y+48/2,r,r);
+//Punkte nach rechts
+//ellipse(x+q,y+48/2,r,r);
+//ellipse(x+2*q,y+48/2,r,r);
+//ellipse(x+3*q,y+48/2,r,r);
+//ellipse(x+4*q,y+48/2,r,r);
+//ellipse(x+5*q,y+48/2,r,r);
+//ellipse(x+6*q,y+48/2,r,r);
+//ellipse(x+7*q,y+48/2,r,r);
+//ellipse(x+8*q,y+48/2,r,r);
+//ellipse(x+9*q,y+48/2,r,r);
+//ellipse(x+10*q,y+48/2,r,r);
+//ellipse(x+11*q,y+48/2,r,r);
+//ellipse(x+12*q,y+48/2,r,r);
+//ellipse(x+13*q,y+48/2,r,r);
+//ellipse(x+14*q,y+48/2,r,r);
+//ellipse(x+15*q,y+48/2,r,r);
+//ellipse(x+16*q,y+48/2,r,r);
+//ellipse(x+17*q,y+48/2,r,r);
+//ellipse(x+18*q,y+48/2,r,r);
+
+// KREIS REIHE 3
+//var r=random(100);
+//var g=random(100);
+//var b=random(100);
+//fill(r,g,b);
+//Kreisgröße
+//var r=5;
+// x-höhe,y-höhe
+//var x=width/2;
+//var y=random(10,40);
+//Abstandsschritte
+//var q=6;
+//Punkte nach links
+//ellipse(x-q,y+48/2,r,r);
+//ellipse(x-2*q,y+48/2,r,r);
+//ellipse(x-3*q,y+48/2,r,r);
+//ellipse(x-4*q,y+48/2,r,r);
+//ellipse(x-5*q,y+48/2,r,r);
+//ellipse(x-6*q,y+48/2,r,r);
+//ellipse(x-7*q,y+48/2,r,r);
+//ellipse(x-8*q,y+48/2,r,r);
+//ellipse(x-9*q,y+48/2,r,r);
+//ellipse(x-10*q,y+48/2,r,r);
+//ellipse(x-11*q,y+48/2,r,r);
+//ellipse(x-12*q,y+48/2,r,r);
+//ellipse(x-13*q,y+48/2,r,r);
+//ellipse(x-14*q,y+48/2,r,r);
+//ellipse(x-15*q,y+48/2,r,r);
+//ellipse(x-16*q,y+48/2,r,r);
+//ellipse(x-17*q,y+48/2,r,r);
+//ellipse(x-18*q,y+48/2,r,r);
+//ellipse(x-19*q,y+48/2,r,r);
+//ellipse(x-20*q,y+48/2,r,r);
+//Punkt in der Mitte
+//ellipse(x,y+48/2,r,r);
+//Punkte nach rechts
+//ellipse(x+q,y+48/2,r,r);
+//ellipse(x+2*q,y+48/2,r,r);
+//ellipse(x+3*q,y+48/2,r,r);
+//ellipse(x+4*q,y+48/2,r,r);
+//ellipse(x+5*q,y+48/2,r,r);
+//ellipse(x+6*q,y+48/2,r,r);
+//ellipse(x+7*q,y+48/2,r,r);
+//ellipse(x+8*q,y+48/2,r,r);
+//ellipse(x+9*q,y+48/2,r,r);
+//ellipse(x+10*q,y+48/2,r,r);
+//ellipse(x+11*q,y+48/2,r,r);
+//ellipse(x+12*q,y+48/2,r,r);
+//ellipse(x+13*q,y+48/2,r,r);
+//ellipse(x+14*q,y+48/2,r,r);
+//ellipse(x+15*q,y+48/2,r,r);
+//ellipse(x+16*q,y+48/2,r,r);
+//ellipse(x+17*q,y+48/2,r,r);
+//ellipse(x+18*q,y+48/2,r,r);
+//ellipse(x+19*q,y+48/2,r,r);
+//ellipse(x+20*q,y+48/2,r,r);
+
+
+// KLEINE KREIS REIHE - MITTIG
+var r=random(255);
+var g=random(255);
+var b=random(255);
+fill(r,g,b);
+//Kreisgröße
+var r=2;
+// x-höhe,y-höhe
+var x=width/2;
+var y=random(80,110);
+//Abstandsschritte
+var q=3;
+//Punkte nach links
+ellipse(x-q,y+48/2,r,r);
+ellipse(x-2*q,y+48/2,r,r);
+ellipse(x-3*q,y+48/2,r,r);
+ellipse(x-4*q,y+48/2,r,r);
+ellipse(x-5*q,y+48/2,r,r);
+ellipse(x-6*q,y+48/2,r,r);
+ellipse(x-7*q,y+48/2,r,r);
+ellipse(x-8*q,y+48/2,r,r);
+ellipse(x-9*q,y+48/2,r,r);
+ellipse(x-10*q,y+48/2,r,r);
+ellipse(x-11*q,y+48/2,r,r);
+ellipse(x-12*q,y+48/2,r,r);
+ellipse(x-13*q,y+48/2,r,r);
+ellipse(x-14*q,y+48/2,r,r);
+ellipse(x-15*q,y+48/2,r,r);
+ellipse(x-16*q,y+48/2,r,r);
+ellipse(x-17*q,y+48/2,r,r);
+ellipse(x-18*q,y+48/2,r,r);
+ellipse(x-19*q,y+48/2,r,r);
+ellipse(x-20*q,y+48/2,r,r);
+ellipse(x-21*q,y+48/2,r,r);
+ellipse(x-22*q,y+48/2,r,r);
+ellipse(x-23*q,y+48/2,r,r);
+ellipse(x-24*q,y+48/2,r,r);
+ellipse(x-25*q,y+48/2,r,r);
+ellipse(x-26*q,y+48/2,r,r);
+ellipse(x-27*q,y+48/2,r,r);
+ellipse(x-28*q,y+48/2,r,r);
+ellipse(x-29*q,y+48/2,r,r);
+ellipse(x-30*q,y+48/2,r,r);
+ellipse(x-31*q,y+48/2,r,r);
+ellipse(x-32*q,y+48/2,r,r);
+ellipse(x-33*q,y+48/2,r,r);
+ellipse(x-34*q,y+48/2,r,r);
+ellipse(x-35*q,y+48/2,r,r);
+ellipse(x-36*q,y+48/2,r,r);
+//Punkt in der Mitte
+ellipse(x,y+48/2,r,r);
+//Punkte nach rechts
+ellipse(x+q,y+48/2,r,r);
+ellipse(x+2*q,y+48/2,r,r);
+ellipse(x+3*q,y+48/2,r,r);
+ellipse(x+4*q,y+48/2,r,r);
+ellipse(x+5*q,y+48/2,r,r);
+ellipse(x+6*q,y+48/2,r,r);
+ellipse(x+7*q,y+48/2,r,r);
+ellipse(x+8*q,y+48/2,r,r);
+ellipse(x+9*q,y+48/2,r,r);
+ellipse(x+10*q,y+48/2,r,r);
+ellipse(x+11*q,y+48/2,r,r);
+ellipse(x+12*q,y+48/2,r,r);
+ellipse(x+13*q,y+48/2,r,r);
+ellipse(x+14*q,y+48/2,r,r);
+ellipse(x+15*q,y+48/2,r,r);
+ellipse(x+16*q,y+48/2,r,r);
+ellipse(x+17*q,y+48/2,r,r);
+ellipse(x+18*q,y+48/2,r,r);
+ellipse(x+19*q,y+48/2,r,r);
+ellipse(x+20*q,y+48/2,r,r);
+ellipse(x+21*q,y+48/2,r,r);
+ellipse(x+22*q,y+48/2,r,r);
+ellipse(x+23*q,y+48/2,r,r);
+ellipse(x+24*q,y+48/2,r,r);
+ellipse(x+25*q,y+48/2,r,r);
+ellipse(x+26*q,y+48/2,r,r);
+ellipse(x+27*q,y+48/2,r,r);
+ellipse(x+28*q,y+48/2,r,r);
+ellipse(x+29*q,y+48/2,r,r);
+ellipse(x+30*q,y+48/2,r,r);
+ellipse(x+31*q,y+48/2,r,r);
+ellipse(x+32*q,y+48/2,r,r);
+ellipse(x+33*q,y+48/2,r,r);
+ellipse(x+34*q,y+48/2,r,r);
+ellipse(x+35*q,y+48/2,r,r);
+ellipse(x+36*q,y+48/2,r,r);
+
+
+//-------------------------------------------
+// ABSCHNITT 5
+//-------------------------------------------
+
+
+//Linien
+stroke(0);
+fill(255);
+
+var y1 = random(8,20);
+var y2 = random(100,150);
+for ( var i = 0; i < 100; i++) {
+strokeWeight(0.3);
+var x = random(4,width-4);
+var striche = line(x,y1,x,y2);
+opacity(striche,80);
 }
+
+
+
+//-------------------------------------------
+// ABSCHNITT 6
+//-------------------------------------------
+//Breite Rechteck
+noStroke();
+var n = random(20,50);
+//Position Rechteck
+var x = random(20,width-(20+n));
+var y = random(20,height-(20+n));
+strokeWeight(0.2);
+var r=random(255);
+var g=random(255);
+var b=random(255);
+fill(r,g,b);
+rect(x,y,n,n);
+}
+
