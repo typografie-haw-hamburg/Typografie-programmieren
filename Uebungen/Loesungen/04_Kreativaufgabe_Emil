@@ -1,0 +1,53 @@
+﻿// @includepath ~/Documents/;%USERPROFILE%Documents;
+// @include basiljs/basil.js;
+
+function draw() {
+
+//https://basiljs2.netlify.com/reference/
+
+clear( doc() );
+
+fill(222,187,175)
+rect(0, 0, width, height);
+
+for (var i=0; i<1; i++){
+var rahmen=5.5
+
+var loopj=random(5,height/2-5)
+for (var j=0; j<loopj; j++){
+Lenghtj=j+20
+line(rahmen,rahmen+j*2,Lenghtj,rahmen+j*2)
+}
+
+var loopk=height/2-rahmen-loopj
+for (var k=0; k<loopk; k++) {
+Lenghtk=20+k
+line (rahmen,height-rahmen-k*2,Lenghtk,height-rahmen-k*2)
+
+}
+
+var x=random(width);
+var y=random(height);
+var abstand=dist(width/2,height/2,x,y);
+
+var r=random(200,255)
+var g=random(50,100)
+var b=random(0,100)
+fill(r,g,b);
+
+textSize(abstand);
+text("ordnung des wissens",x,y,100,100)
+}
+
+strokeWeight(10)
+stroke(r,g,b)
+noFill()
+
+beginShape(CLOSE)
+vertex(rahmen,rahmen)
+vertex (width-rahmen,rahmen)
+vertex(width-rahmen,height-rahmen)
+vertex(rahmen,height-rahmen)
+endShape();
+
+}
