@@ -48,51 +48,33 @@ var b=random(200);
 stroke(r,g,b);
 rectMode(CENTER);
 rect(width/2,height/2,150,180);
+stroke(255);
+rect(width/2,height/2,140,170);
+rect(width/2,height/2,160,190);
 
-//Element4
 
-strokeWeight(1);
-var r=random(80);
-var g=random(150);
-var b=random(200);
-stroke(r,g,b);
-rectMode(CENTER);
-
-var r=random(80);
-var g=random(150);
-var b=random(200);
-fill(r,g,b);
-
-var Eck1 = rect(width/2-75,height/2-90,50,40);
-var Eck2 = rect(width/2+75,height/2+90,50,40);
-var Eck3 = rect(width/2-75,height/2+90,50,40);
-var Eck4 = rect(width/2+75,height/2-90,50,40);
-
-opacity(Eck1,50);
-opacity(Eck2,50);
-opacity(Eck3,50);
-opacity(Eck4,50);
-
-// //Element3
-// fill(80,40,90)
-// strokeWeight(1);
-// var r=random(150);
-// var g=random(150);
-// var b=random(80);
-// stroke(r,g,b);
-// rectMode(CENTER);
-// var Eck5 = rect(width/2,height/2,140,40);
-// opacity(Eck5,80);
 
 
 //Element4 Text
+for(i=0; i<15; i++) {
+
+  var x = width/2
+  var y = height/5
+
+  // var xOffset = random(70,80);
+  // var yOffset = random(70,80);
+
+  // x2 = x + xOffset;
+  // y2 = y + yOffset;
+
+
 textAlign(Justification.CENTER_ALIGN)
 fill(255);
 textSize(90);
 textFont("Futura","Bold");
-text("GUDE",width/2,height/2,140,30);
+text("GUDE",x,y*i,140,30);
 
-
+}
 
 
 }
