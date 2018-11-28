@@ -1,6 +1,6 @@
 # Übungen #8
 
-Macht bitte folgende Übungen bis zum nächsten Mittwoch. Schaut euch zur Hilfe auch [die von mir hochgeladenen Scripts aus dem Kurs](https://github.com/typografie-haw-hamburg/Typografie-programmieren/tree/master/Kurs/05) an und helft euch gerne wieder untereinander.
+Macht bitte folgende Übungen bis zum nächsten Mittwoch. Schaut euch zur Hilfe auch [die von mir hochgeladenen Scripts aus dem Kurs](https://github.com/typografie-haw-hamburg/Typografie-programmieren/tree/master/Kurs/08) an und helft euch gerne wieder untereinander.
 
 1. Schreibt ein Script, das einen Text in euer Dokument lädt. Dann soll das längste Wort dieses Textes herausgesucht werden. In einem zweiten Textrahmen soll die Länge dieses Wortes und das Wort selbst ausgegeben werden.
 
