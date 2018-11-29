@@ -12,7 +12,14 @@ function draw() {
   var encodedData = loadString(url);
   var data = JSON.decode( encodedData );
 
-  inspect(data.list[0].temp);
+  inspect(data.list[0].dt);
+
+  var date  = new Date(data.list[0].dt * 1000);
+  var year  = date.getFullYear();
+  var month = ("0" + date.getMonth() + 1).slice(-2);
+  var day   = ("0" + date.getDate()).slice(-2);
+
+  alert(day + "." + month + "." + year)
 
   for(var i = 0; i < data.list.length; i++) {
 
