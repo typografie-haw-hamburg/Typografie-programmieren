@@ -1,7 +1,7 @@
 ## Scripts – Einheit 10 – 05.12.2018
 
-### [01_objectStyle.jsx](/Kurs/10/01_objectStyle.jsx)
-![01_objectStyle.jsx](/Material/Bilder/Kurs/2018/10/01_objectStyle.jpg)
+### [01_objectStyles.jsx](/Kurs/10/01_objectStyles.jsx)
+![01_objectStyles.jsx](/Material/Bilder/Kurs/2018/10/01_objectStyles.jpg)
 
 ### [02_functionsWithoutArguments.jsx](/Kurs/10/02_functionsWithoutArguments.jsx)
 ![02_functionsWithoutArguments.jsx](/Material/Bilder/Kurs/2018/10/02_functionsWithoutArguments.gif)
