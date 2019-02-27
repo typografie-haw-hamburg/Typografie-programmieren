@@ -9,12 +9,9 @@ function draw() {
 
   var results = findGrep(tf, "[\\W\\S]");
 
-  inspect(results);
-
   for (var i = 0; i < results.length; i++) {
-      typo(results[i], "fillColor", color(255, 0, 0));
-    }
-
+    typo(results[i], "fillColor", color(255, 0, 0));
+  }
 }
 
 function findGrep(container, input) {
