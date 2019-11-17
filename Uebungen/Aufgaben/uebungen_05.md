@@ -10,7 +10,7 @@ Macht bitte folgende Übungen bis zum nächsten _Montag_(!). Schaut euch zur Hil
 
     * Optional, da tricky: Wenn ihr das geschafft habt, versucht das Script so abzuändern, dass ihr genau steuern könnt, wie groß das erste Wort ist und wie groß das letzte (z.B. erstes Wort Schriftgröße 3, letztes Wort Schriftgröße 40, alle Worte dazwischen entsprechend abgestuft). Dazu braucht ihr wieder `map()` denn ihr müsst einen bestimmten Eingangsbereich in den Ausgangsbereich von 3 bis 40 umwandeln.
 
-3. Wir haben gelernt, wie man mit `loadString()` eine Textdatei ins Dokument laden kann. Versucht mit der Basil-Reference herauszufinden, wie man ein Bild ins Dokument laden kann. Wenn ihr das geschafft habt, versucht mit einem Loop mehrmals das gleiche Bild im Dokument zu platzieren, so dass ein interessate Gestaltung steht, versucht dazu auch die Bilder zu drehen oder zu skalieren (mit dem Befehl `transform()`).
+3. Wir haben gelernt, wie man mit `loadString()` eine Textdatei ins Dokument laden kann. Versucht mit der Basil-Reference herauszufinden, wie man ein Bild ins Dokument laden kann. Wenn ihr das geschafft habt, versucht mit einem Loop mehrmals das gleiche Bild im Dokument zu platzieren, so dass ein interessante Gestaltung steht, versucht dazu auch die Bilder zu drehen oder zu skalieren (mit dem Befehl `transform()`).
 
 4. (**Kreativaufgabe**) Versucht mit eurem Wissen über das bisher gelernte eine interessante Gestaltung per Script zu erstellen. In eurem Script soll Text verwendet werden. Speichert von diesem Design ein JPEG ab (Datei -> Exportieren -> Format JPEG -> Qualität Hoch | Auflösung(ppi): 72).
 
